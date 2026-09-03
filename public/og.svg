@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <radialGradient id="paper" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#f5eddc"/>
+      <stop offset="100%" stop-color="#ecdfc0"/>
+    </radialGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#b28c50" stroke-opacity="0.10" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#paper)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Left column: text -->
+  <g transform="translate(70, 100)">
+    <text font-family="Inter, sans-serif" font-size="18" letter-spacing="4" fill="#a8802a" font-weight="600">AN INTERACTIVE NHD EXHIBIT</text>
+    <text y="76" font-family="Playfair Display, Georgia, serif" font-size="70" font-weight="700" fill="#0f1a2b">
+      <tspan>The Great</tspan>
+      <tspan x="0" y="84">Trigonometrical</tspan>
+      <tspan x="0" y="168">Survey of India</tspan>
+    </text>
+    <text y="320" font-family="Playfair Display, Georgia, serif" font-size="28" font-style="italic" fill="#5b3a1e">
+      <tspan>How a subcontinent was turned into</tspan>
+      <tspan x="0" y="38">a system of measured positions,</tspan>
+      <tspan x="0" y="76">1802 to 1871.</tspan>
+    </text>
+    <text y="440" font-family="Inter, sans-serif" font-size="20" fill="#5b3a1e">
+      <tspan>1802 · first baseline</tspan>
+      <tspan x="330" y="0">1856 · Peak XV published</tspan>
+    </text>
+  </g>
+
+  <!-- Right column: stylized India + triangle network -->
+  <g transform="translate(760, 90)">
+    <rect x="0" y="0" width="380" height="450" fill="rgba(160,112,68,0.06)" stroke="#5b3a1e" stroke-width="1.5" rx="4"/>
+    <!-- Rough India silhouette -->
+    <path d="M 190 30 L 235 45 L 280 50 L 320 70 L 330 105 L 340 140 L 335 180 L 320 210 L 305 250 L 295 290 L 285 330 L 270 370 L 240 410 L 210 420 L 195 400 L 180 370 L 160 330 L 140 290 L 130 250 L 130 210 L 140 170 L 155 135 L 170 100 L 180 65 Z"
+          fill="rgba(160,112,68,0.15)" stroke="#5b3a1e" stroke-width="2"/>
+    <!-- Great Arc -->
+    <line x1="210" y1="415" x2="220" y2="65" stroke="#a8802a" stroke-width="2" stroke-dasharray="6 5" opacity="0.7"/>
+    <!-- Triangle chain -->
+    <polygon points="210,415 240,400 200,370" fill="none" stroke="#a8802a" stroke-width="1.5"/>
+    <polygon points="240,400 200,370 250,340" fill="none" stroke="#a8802a" stroke-width="1.5"/>
+    <polygon points="200,370 250,340 180,310" fill="none" stroke="#a8802a" stroke-width="1.5"/>
+    <polygon points="250,340 180,310 245,270" fill="none" stroke="#a8802a" stroke-width="1.5"/>
+    <polygon points="180,310 245,270 175,225" fill="none" stroke="#a8802a" stroke-width="1.5"/>
+    <polygon points="245,270 175,225 240,180" fill="none" stroke="#a8802a" stroke-width="1.5"/>
+    <polygon points="175,225 240,180 195,130" fill="none" stroke="#a8802a" stroke-width="1.5"/>
+    <polygon points="240,180 195,130 260,110" fill="none" stroke="#a8802a" stroke-width="1.5"/>
+    <polygon points="195,130 260,110 220,65" fill="none" stroke="#a8802a" stroke-width="1.5"/>
+    <!-- Stations -->
+    <g fill="#0f1a2b">
+      <circle cx="210" cy="415" r="4"/>
+      <circle cx="240" cy="400" r="4"/>
+      <circle cx="200" cy="370" r="4"/>
+      <circle cx="250" cy="340" r="4"/>
+      <circle cx="180" cy="310" r="4"/>
+      <circle cx="245" cy="270" r="4"/>
+      <circle cx="175" cy="225" r="4"/>
+      <circle cx="240" cy="180" r="4"/>
+      <circle cx="195" cy="130" r="4"/>
+      <circle cx="260" cy="110" r="4"/>
+      <circle cx="220" cy="65" r="4"/>
+    </g>
+    <!-- Peak XV callout -->
+    <circle cx="220" cy="65" r="7" fill="#c89b3a" stroke="#5b3a1e" stroke-width="1.5"/>
+    <text x="235" y="60" font-family="Inter, sans-serif" font-size="12" fill="#5b3a1e" font-weight="600">Peak XV</text>
+  </g>
+
+  <!-- Compass badge, top-right -->
+  <g transform="translate(1090, 60)">
+    <circle r="34" fill="url(#paper)" stroke="#5b3a1e" stroke-width="2"/>
+    <circle r="24" fill="none" stroke="#a8802a" stroke-width="1" stroke-dasharray="1 3"/>
+    <polygon points="0,-26 5,-2 0,-6 -5,-2" fill="#c89b3a" stroke="#5b3a1e" stroke-width="0.6"/>
+    <polygon points="0,26 -5,2 0,6 5,2" fill="#243449" stroke="#5b3a1e" stroke-width="0.6"/>
+    <circle r="2" fill="#5b3a1e"/>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(70, 570)">
+    <text font-family="Inter, sans-serif" font-size="16" letter-spacing="3" fill="#5b3a1e" font-weight="600">GREAT TRIGONOMETRICAL SURVEY  ·  1802 – 1871</text>
+  </g>
+</svg>

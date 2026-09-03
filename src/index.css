@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Base type scale. Everything on the site is sized in rem, so raising the
+     root size raises captions, chart labels, and body copy together. */
+  html {
+    scroll-behavior: smooth;
+    font-size: 17px;
+    scroll-padding-top: 7rem;   /* sticky navbar + section tab strip */
+  }
+  @media (min-width: 768px) { html { font-size: 18px; } }
+  html, body, #root { height: 100%; }
+  body {
+    @apply font-sans text-ink-900 bg-parchment-50 antialiased;
+    font-size: 1rem;
+    line-height: 1.75;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  h1, h2, h3, h4 { @apply font-display tracking-tight; }
+  ::selection { background: rgba(200, 155, 58, 0.35); color: #0f1a2b; }
+
+  /* Focus rings — visible but not aggressive */
+  :focus-visible {
+    outline: 2px solid theme('colors.brass.500');
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  /* Custom scrollbar — WebKit only, but that's fine */
+  ::-webkit-scrollbar { width: 12px; height: 12px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(122, 82, 48, 0.25);
+    border: 3px solid transparent;
+    background-clip: padding-box;
+    border-radius: 8px;
+  }
+  ::-webkit-scrollbar-thumb:hover { background: rgba(122, 82, 48, 0.45); background-clip: padding-box; border: 3px solid transparent; }
+}
+
+@layer components {
+  .container-museum {
+    @apply max-w-[1360px] mx-auto px-6 md:px-10 lg:px-14;
+  }
+  .card-parchment {
+    @apply bg-parchment-100/70 border border-earth-500/20 rounded-md;
+    box-shadow: 0 1px 2px rgba(15, 26, 43, 0.04);
+  }
+  .card-parchment-hover {
+    @apply transition-colors duration-200;
+  }
+  .card-parchment-hover:hover {
+    box-shadow: 0 2px 8px rgba(15, 26, 43, 0.07);
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-md px-5 py-2.5 text-sm font-medium
+           bg-ink-900 text-parchment-50 hover:bg-ink-800 transition-all duration-200
+           focus:outline-none focus:ring-2 focus:ring-brass-500 focus:ring-offset-2 focus:ring-offset-parchment-50
+           shadow-sm hover:shadow-md;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-md px-5 py-2.5 text-sm font-medium
+           border border-ink-900/25 bg-parchment-100 text-ink-900 hover:bg-parchment-200 hover:border-ink-900/40
+           transition-all duration-200;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-md px-4 py-2 text-sm font-medium
+           text-ink-800 hover:bg-parchment-200/70 transition-colors;
+  }
+
+  .page-title {
+    @apply font-display text-4xl md:text-5xl lg:text-6xl font-semibold text-ink-900 leading-[1.05];
+    letter-spacing: -0.02em;
+  }
+  .page-eyebrow {
+    @apply uppercase tracking-[0.2em] text-[0.75rem] font-semibold text-brass-600;
+  }
+
+  /* Reading sizes. lede = the opening paragraph of a section; body = the rest.
+     Both are deliberately larger and airier than the old defaults. */
+  .lede {
+    @apply text-[1.2rem] md:text-[1.28rem] text-ink-800 leading-[1.65] max-w-[36em];
+  }
+  .body-text {
+    @apply text-[1.05rem] text-ink-800 leading-[1.75] max-w-[36em];
+  }
+  .caption-text {
+    @apply text-[0.92rem] text-ink-800/80 leading-[1.6];
+  }
+  .note-text {
+    @apply text-[0.85rem] text-earth-700 leading-[1.6];
+  }
+  .section-title {
+    @apply font-display text-[1.9rem] md:text-[2.3rem] font-semibold text-ink-900 leading-[1.15];
+    letter-spacing: -0.015em;
+  }
+  .sub-title {
+    @apply font-display text-[1.35rem] md:text-[1.5rem] font-semibold text-ink-900 leading-snug;
+  }
+  .prose-museum p { @apply text-ink-800/90 leading-relaxed; }
+
+  /* Survey-tick section divider — a measuring scale, not a flourish. */
+  .rule-ticks {
+    height: 10px;
+    border-bottom: 1px solid rgba(122, 82, 48, 0.28);
+    background-image: repeating-linear-gradient(to right,
+      rgba(122, 82, 48, 0.30) 0, rgba(122, 82, 48, 0.30) 1px,
+      transparent 1px, transparent 12px);
+  }
+  /* Chapter/section number in the surveyor's field-book voice. */
+  .field-num {
+    @apply font-mono text-[0.8rem] tracking-[0.1em] text-brass-600;
+  }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .text-pretty  { text-wrap: pretty; }
+
+  /* Fine coordinate grid — a surveyor's sheet. Restrained, not a gradient. */
+  .hero-grid {
+    background-image:
+      linear-gradient(to right, rgba(122, 82, 48, 0.10) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(122, 82, 48, 0.10) 1px, transparent 1px),
+      linear-gradient(to right, rgba(122, 82, 48, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(122, 82, 48, 0.05) 1px, transparent 1px);
+    background-size: 96px 96px, 96px 96px, 24px 24px, 24px 24px;
+    background-position: -1px -1px;
+    mask-image: radial-gradient(ellipse 80% 70% at 30% 30%, #000 40%, transparent 100%);
+    -webkit-mask-image: radial-gradient(ellipse 80% 70% at 30% 30%, #000 40%, transparent 100%);
+  }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-page-in { animation: none !important; }
+}
+
+.leaflet-container { background: #f5eddc; }
+
+@keyframes pageIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-page-in { animation: pageIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) both; }
+

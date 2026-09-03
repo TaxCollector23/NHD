@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 560" font-family="Inter, system-ui, sans-serif">
+<rect width="1240" height="560" fill="#faf8f4"/>
+<text x="80" y="52" font-family="Playfair Display, Georgia, serif" font-size="30" font-weight="700" fill="#0f1a2b">The Great Trigonometrical Survey in verifiable dates</text>
+<text x="80" y="78" font-size="14" fill="#5b3a1e">The only fully sourced timeline for the project. Colour shows the strength of the evidence behind each date.</text>
+<line x1="80" y1="300" x2="1160" y2="300" stroke="#5b3a1e" stroke-width="2"/>
+<line x1="108.1" y1="295" x2="108.1" y2="305" stroke="#5b3a1e" stroke-width="1"/>
+<text x="108.1" y="324" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="#7a5230">1790</text>
+<line x1="248.3" y1="295" x2="248.3" y2="305" stroke="#5b3a1e" stroke-width="1"/>
+<text x="248.3" y="324" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="#7a5230">1800</text>
+<line x1="388.6" y1="295" x2="388.6" y2="305" stroke="#5b3a1e" stroke-width="1"/>
+<text x="388.6" y="324" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="#7a5230">1810</text>
+<line x1="528.8" y1="295" x2="528.8" y2="305" stroke="#5b3a1e" stroke-width="1"/>
+<text x="528.8" y="324" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="#7a5230">1820</text>
+<line x1="669.1" y1="295" x2="669.1" y2="305" stroke="#5b3a1e" stroke-width="1"/>
+<text x="669.1" y="324" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="#7a5230">1830</text>
+<line x1="809.4" y1="295" x2="809.4" y2="305" stroke="#5b3a1e" stroke-width="1"/>
+<text x="809.4" y="324" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="#7a5230">1840</text>
+<line x1="949.6" y1="295" x2="949.6" y2="305" stroke="#5b3a1e" stroke-width="1"/>
+<text x="949.6" y="324" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="#7a5230">1850</text>
+<line x1="1089.9" y1="295" x2="1089.9" y2="305" stroke="#5b3a1e" stroke-width="1"/>
+<text x="1089.9" y="324" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="#7a5230">1860</text>
+<line x1="80.0" y1="300" x2="80.0" y2="230.0" stroke="#0f1a2b" stroke-width="1.4" stroke-opacity="0.5"/>
+<circle cx="80.0" cy="300" r="6" fill="#0f1a2b"/>
+<text x="80.0" y="206.0" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" font-weight="600" fill="#0f1a2b">1788</text>
+<text x="80.0" y="222.0" text-anchor="middle" font-size="12" fill="#243449">Rennell publishes</text>
+<text x="80.0" y="236.0" text-anchor="middle" font-size="12" fill="#243449">Memoir of Hindoostan</text>
+<line x1="276.4" y1="300" x2="276.4" y2="404.0" stroke="#a8802a" stroke-width="1.4" stroke-opacity="0.5"/>
+<circle cx="276.4" cy="300" r="6" fill="#a8802a"/>
+<text x="276.4" y="410.0" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" font-weight="600" fill="#a8802a">1802</text>
+<text x="276.4" y="430.0" text-anchor="middle" font-size="12" fill="#243449">Lambton begins the</text>
+<text x="276.4" y="444.0" text-anchor="middle" font-size="12" fill="#243449">trigonometrical survey</text>
+<line x1="500.8" y1="300" x2="500.8" y2="162.0" stroke="#a8802a" stroke-width="1.4" stroke-opacity="0.5"/>
+<circle cx="500.8" cy="300" r="6" fill="#a8802a"/>
+<text x="500.8" y="138.0" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" font-weight="600" fill="#a8802a">1818</text>
+<text x="500.8" y="154.0" text-anchor="middle" font-size="12" fill="#243449">Designated the "Great</text>
+<text x="500.8" y="168.0" text-anchor="middle" font-size="12" fill="#243449">Trigonometrical Survey"</text>
+<line x1="669.1" y1="300" x2="669.1" y2="370.0" stroke="#a8802a" stroke-width="1.4" stroke-opacity="0.5"/>
+<circle cx="669.1" cy="300" r="6" fill="#a8802a"/>
+<text x="669.1" y="376.0" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" font-weight="600" fill="#a8802a">1830</text>
+<text x="669.1" y="396.0" text-anchor="middle" font-size="12" fill="#243449">Everest: Surveyor General</text>
+<text x="669.1" y="410.0" text-anchor="middle" font-size="12" fill="#243449">and Superintendent</text>
+<line x1="851.4" y1="300" x2="851.4" y2="196.0" stroke="#a8802a" stroke-width="1.4" stroke-opacity="0.5"/>
+<circle cx="851.4" cy="300" r="6" fill="#a8802a"/>
+<text x="851.4" y="172.0" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" font-weight="600" fill="#a8802a">1843</text>
+<text x="851.4" y="188.0" text-anchor="middle" font-size="12" fill="#243449">Everest retires</text>
+<line x1="907.5" y1="300" x2="907.5" y2="438.0" stroke="#0f1a2b" stroke-width="1.4" stroke-opacity="0.5"/>
+<circle cx="907.5" cy="300" r="6" fill="#0f1a2b"/>
+<text x="907.5" y="444.0" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" font-weight="600" fill="#0f1a2b">1847</text>
+<text x="907.5" y="464.0" text-anchor="middle" font-size="12" fill="#243449">Everest publishes</text>
+<text x="907.5" y="478.0" text-anchor="middle" font-size="12" fill="#243449">the Account (arc)</text>
+<line x1="949.6" y1="300" x2="949.6" y2="230.0" stroke="#3d6b7a" stroke-width="1.4" stroke-opacity="0.5"/>
+<circle cx="949.6" cy="300" r="6" fill="#3d6b7a"/>
+<text x="949.6" y="206.0" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" font-weight="600" fill="#3d6b7a">1850</text>
+<text x="949.6" y="222.0" text-anchor="middle" font-size="12" fill="#243449">Waugh asks Sikdar to</text>
+<text x="949.6" y="236.0" text-anchor="middle" font-size="12" fill="#243449">revise peak-height method</text>
+<line x1="963.6" y1="300" x2="963.6" y2="404.0" stroke="#0f1a2b" stroke-width="1.4" stroke-opacity="0.5"/>
+<circle cx="963.6" cy="300" r="6" fill="#0f1a2b"/>
+<text x="963.6" y="410.0" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" font-weight="600" fill="#0f1a2b">1851</text>
+<text x="963.6" y="430.0" text-anchor="middle" font-size="12" fill="#243449">Waugh reports on</text>
+<text x="963.6" y="444.0" text-anchor="middle" font-size="12" fill="#243449">survey operations</text>
+<line x1="1033.8" y1="300" x2="1033.8" y2="162.0" stroke="#7a5230" stroke-width="1.4" stroke-opacity="0.5"/>
+<circle cx="1033.8" cy="300" r="6" fill="#7a5230"/>
+<text x="1033.8" y="138.0" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" font-weight="600" fill="#7a5230">1856</text>
+<text x="1033.8" y="154.0" text-anchor="middle" font-size="12" fill="#243449">Peak XV announced</text>
+<text x="1033.8" y="168.0" text-anchor="middle" font-size="12" fill="#243449">(29,002 ft)</text>
+<line x1="1160.0" y1="300" x2="1160.0" y2="370.0" stroke="#7a5230" stroke-width="1.4" stroke-opacity="0.5"/>
+<circle cx="1160.0" cy="300" r="6" fill="#7a5230"/>
+<text x="1160.0" y="376.0" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" font-weight="600" fill="#7a5230">1865</text>
+<text x="1160.0" y="396.0" text-anchor="middle" font-size="12" fill="#243449">Name "Mount Everest"</text>
+<text x="1160.0" y="410.0" text-anchor="middle" font-size="12" fill="#243449">adopted</text>
+<circle cx="80" cy="520" r="6" fill="#0f1a2b"/>
+<text x="94" y="524" font-size="13" fill="#243449">PRIMARY source</text>
+<circle cx="360" cy="520" r="6" fill="#a8802a"/>
+<text x="374" y="524" font-size="13" fill="#243449">Institutional record</text>
+<circle cx="640" cy="520" r="6" fill="#3d6b7a"/>
+<text x="654" y="524" font-size="13" fill="#243449">Scholarly secondary</text>
+<circle cx="920" cy="520" r="6" fill="#7a5230"/>
+<text x="934" y="524" font-size="13" fill="#243449">Secondary</text>
+</svg>
