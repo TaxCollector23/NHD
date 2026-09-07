@@ -51,8 +51,8 @@ export default function HeroSection() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.35 }}
           >
-            The geometry was two hundred years old already. What made it hard was holding a single plan together, across
-            a subcontinent, for seventy years.
+            The geometry was two hundred years old already. The difficulty was holding a single plan together across a
+            subcontinent for seventy years.
           </motion.p>
 
           <motion.div
@@ -136,8 +136,8 @@ export default function HeroSection() {
               ))}
             </svg>
             <p className="note-text mt-2">
-              The station coordinates are real places. The mesh drawn between them is there to explain the idea, and is
-              not the historical network.
+              The station coordinates are real places. The mesh drawn between them is a teaching diagram, not the
+              historical network.
             </p>
           </div>
         </div>

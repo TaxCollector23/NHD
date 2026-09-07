@@ -132,7 +132,7 @@ export default function Tools() {
               <p>
                 Scroll down inside the tool for the eyepiece and the vernier, the sliding scale that lets an observer
                 read a fraction of the smallest mark on the circle. That reading is where the angle in the simulator
-                above comes from in the first place.
+                above comes from.
               </p>
             </>
           }
@@ -170,10 +170,10 @@ export default function Tools() {
                 by the distance. That gets you a first answer, and over a hundred miles it is wrong in two ways at once.
               </p>
               <p>
-                The Earth curves away underneath the sight line, which makes the peak taller than the raw geometry says.
-                Light bends downward through the atmosphere, which makes the peak look higher than it is. Move the
-                refraction slider and watch the final number move. That sensitivity is why the work went to an office
-                and got done repeatedly, instead of resting on one observer looking once.
+                The Earth curves away underneath the sight line, so the peak stands taller than the raw geometry says.
+                Light bends downward through the atmosphere, and that lifts the summit higher again in the eyepiece.
+                Move the refraction slider and watch the final number move. A figure this sensitive is why the survey
+                put the work in an office and repeated it, rather than trusting one observer looking once.
               </p>
             </>
           }
@@ -208,8 +208,8 @@ export default function Tools() {
               </p>
               <p>
                 Push either error slider and the crossing stops being a point and turns into a small patch. That patch
-                is the honest answer, because a measured position always has a size. The two technologies share nothing
-                but the logic.
+                is the honest answer, because a measured position always has a size. The two technologies are unrelated.
+                The geometry is the only thing they have in common.
               </p>
             </>
           }

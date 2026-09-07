@@ -62,7 +62,7 @@ const people: Person[] = [
     role: 'Chief computer, Calcutta office',
     stage: 'Computing office',
     imgSrc: '/portraits/sikdar.jpg',
-    body: 'Ran the office that turned field angles into positions. Wrote the 1850 procedure for snow peaks.',
+    body: 'Led the office that turned field angles into positions. Wrote the 1850 procedure for snow peaks.',
   },
   {
     key: 'teams',
@@ -101,17 +101,17 @@ export default function Impact() {
       {/* ── 01 · The framework ─────────────────────────────────────────── */}
       <section id="framework" className="scroll-mt-28">
         <h2 className="section-title">What seventy years produced</h2>
-        <Standfirst>The short answer.</Standfirst>
+        <Standfirst>Why it mattered to everyone after.</Standfirst>
 
         <p className="lede">
-          It sounds modest said plainly. Points across India whose positions were known accurately, and known in
-          relation to one another, so a later surveyor could start from one instead of starting over.
+          Points across India whose positions were known accurately, and known in relation to one another. A later
+          surveyor could start from one of them instead of starting over.
         </p>
 
         <p className="body-text mt-5">
           The survey called this a geodetic framework: the measurements accounted for the curve of the Earth rather than
           treating India as a flat sheet. Coverage stayed uneven. Even so, other surveys were checked against this one,
-          which people at the time called the undisputed ground of Indian geography.
+          which the Historical Records of the Survey of India called the undisputed ground of Indian geography.
         </p>
 
         <div className="mt-8">
@@ -151,7 +151,7 @@ export default function Impact() {
           ))}
         </div>
         <p className="note-text mt-2">
-          Each role below sits on one stage of this line. The labour holds up all of them.
+          Each role below sits on one stage of this line. Indian workers staffed every one of them.
         </p>
 
         <div className="mt-8 grid md:grid-cols-3 gap-8">

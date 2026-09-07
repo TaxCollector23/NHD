@@ -10,7 +10,7 @@ export default function ThreadKicker() {
     <div className="mt-6 max-w-[40em]">
       <div className="rule-ticks mb-3" aria-hidden />
       <p className="font-display text-[1.2rem] md:text-[1.35rem] leading-snug text-brass-700">
-        One plan, one network, and seventy years of checking it against itself.
+        One plan, followed for seventy years, with every measurement checked against another.
       </p>
     </div>
   )

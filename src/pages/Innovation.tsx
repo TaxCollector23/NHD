@@ -20,7 +20,7 @@ export default function Innovation() {
       {/* ── 01 · The problem ───────────────────────────────────────────── */}
       <section id="problem" className="scroll-mt-28">
         <h2 className="section-title">Why measurement mattered</h2>
-        <Standfirst>What the Company needed.</Standfirst>
+        <Standfirst>Why the Company paid for it.</Standfirst>
 
         <p className="lede">
           By 1800 the East India Company held a great deal of Indian territory and paid its bills by taxing the land.
@@ -29,8 +29,8 @@ export default function Innovation() {
 
         <p className="body-text mt-5">
           James Rennell and other Company surveyors had charted whole regions by 1788, so the maps were hardly blank.
-          The trouble was that each region had been surveyed on its own, and nobody could say how far apart any two
-          were. Lambton's idea was to measure one accurate skeleton first, then hang the old maps on it.
+          Each region had been surveyed on its own, and nobody could say how far apart any two were. Lambton's idea was
+          to measure one accurate skeleton first, then hang the old maps on it.
         </p>
 
         <div className="mt-8">
@@ -56,8 +56,8 @@ export default function Innovation() {
         <Standfirst>The geometry, in four steps.</Standfirst>
 
         <p className="lede">
-          The method is triangulation, and it asks very little. Measure one line on the ground, stand at each end and
-          aim at the same distant hill, and those two angles fix the whole triangle.
+          The method is triangulation. Measure one line on the ground, stand at each end and aim at the same distant
+          hill, and those two angles fix the whole triangle.
         </p>
 
         <div className="mt-8">
@@ -69,10 +69,10 @@ export default function Innovation() {
             <h3 className="sub-title">Old technique, new scale</h3>
             <p className="body-text mt-4">
               European surveyors had solved triangles this way for two hundred years. Keeping it up across a
-              subcontinent for seventy years was the achievement. A parish surveyor solved his one triangle and went
-              home. This survey chained thousands together, kept an office in Calcutta that did nothing but arithmetic,
-              and treated a disagreement between two readings as something to chase down, not round away. Colin
-              Mackenzie set out the principle in 1815: persevere "on one undeviating plan."
+              subcontinent for seventy years was new. A parish surveyor solved his one triangle and went home. This
+              survey chained thousands together, kept an office in Calcutta that did nothing but arithmetic, and treated
+              a disagreement between two readings as something to chase down, not round away. Colin Mackenzie set out
+              the principle in 1815: persevere "on one undeviating plan."
             </p>
           </div>
         </div>
@@ -91,13 +91,13 @@ export default function Innovation() {
       {/* ── 03 · The instruments ───────────────────────────────────────── */}
       <section id="instruments" className="scroll-mt-28 mt-16 border-t border-earth-500/20 pt-12">
         <h2 className="section-title">Where the accuracy came from</h2>
-        <Standfirst>Repetition, mostly.</Standfirst>
+        <Standfirst>Theodolites, starlight, and steel chains.</Standfirst>
 
         <p className="lede">
           A theodolite is a telescope mounted so it swings against finely marked circles, letting an observer read off
-          exactly where it points. Most of the accuracy, though, came from repetition. Latitude was checked separately
-          against the stars, and angles were corrected for refraction, the way air bends light. W. Hodson wrote down the
-          rule: investigate discrepancies, never conceal them.
+          exactly where it points. The instrument mattered less than the habit of repeating the reading. Latitude was
+          checked separately against the stars, and angles were corrected for refraction, the way air bends light. W.
+          Hodson wrote down the rule: investigate discrepancies, never conceal them.
         </p>
 
         <ul className="body-text mt-6 max-w-[40em] space-y-2 list-disc pl-5">

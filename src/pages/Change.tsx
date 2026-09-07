@@ -25,7 +25,7 @@ export default function Change() {
   return (
     <div className="container-museum py-8 md:py-10">
       <div className="page-eyebrow mb-2">Change</div>
-      <h1 className="page-title max-w-[14em]">From unknowable to computable</h1>
+      <h1 className="page-title max-w-[14em]">Calculated, not climbed</h1>
       <ThreadKicker />
 
       <SectionNav sections={pageSections['/change']} />
@@ -47,9 +47,9 @@ export default function Change() {
         </p>
 
         <p className="body-text mt-4">
-          A mountain nobody could climb had become a number worked out at a desk. Radhanath Sikdar's office did that
-          computation, though it was collective work. Calling him the discoverer of Everest claims more than the record
-          supports, and the story that Waugh added two feet to avoid a round number is documented nowhere.
+          An unclimbed summit had become a number worked out at a desk. Radhanath Sikdar's office did that computation,
+          though it was collective work. Calling him the discoverer of Everest claims more than the record supports, and
+          the story that Waugh added two feet to avoid a round number is documented nowhere.
         </p>
 
         <div className="mt-8">
@@ -66,7 +66,7 @@ export default function Change() {
       {/* ── 02 · What continued ────────────────────────────────────────── */}
       <section id="after" className="scroll-mt-28 mt-16 border-t border-earth-500/20 pt-12">
         <h2 className="section-title">What continued afterward</h2>
-        <Standfirst>What stayed.</Standfirst>
+        <Standfirst>The Survey of India, and after.</Standfirst>
 
         <p className="lede">
           The records, the instruments, and the working methods all outlasted the careers that produced them. The
@@ -75,8 +75,8 @@ export default function Change() {
 
         <p className="body-text mt-5">
           Satellite positioning does the same job now. A receiver works out how far it is from satellites whose
-          positions are already known, the same move as fixing a station from known points. The technology has nothing
-          in common with the old method, but the problem is the same.
+          positions are already known, the same move as fixing a station from known points. The two technologies are
+          unrelated, though the problem they solve is identical.
         </p>
 
         <section className="mt-8 card-parchment overflow-hidden">
@@ -105,25 +105,24 @@ export default function Change() {
       {/* ── 03 · Why it matters now ────────────────────────────────────── */}
       <section id="today" className="scroll-mt-28 mt-16 border-t border-earth-500/20 pt-12">
         <h2 className="section-title">Why it matters now</h2>
-        <Standfirst>The question at the top.</Standfirst>
+        <Standfirst>What it looks like now.</Standfirst>
 
         <p className="lede">
-          Where am I, and how far is it to there? A phone answers both in about a second, which makes exact position
-          feel like something the world simply comes with. Someone had to build the first framework that could answer
-          them at all.
+          Where am I, and how far is it to there? A phone answers both in about a second, so exact position feels like a
+          fact of the world. Someone had to build the first framework that could answer those questions at all.
         </p>
 
         <p className="body-text mt-5">
-          The survey taught the world a great deal about the true shape of the Earth, and it made an occupied territory
-          easier to tax, march through, and hold. Both were the point.
+          The survey taught the world a great deal about the true shape of the Earth. It also made an occupied territory
+          easier to tax, march through, and hold. It was funded for both reasons.
         </p>
 
         {/* Closes the loop opened by the cold open on the home page. */}
         <div className="mt-10 max-w-[42em]">
           <div className="rule-ticks mb-5" aria-hidden />
           <p className="font-display text-[1.5rem] md:text-[1.95rem] leading-[1.25] text-ink-900 text-balance">
-            Seventy years, thousands of surveyors, and an empire with reasons of its own for paying.
-            <span className="text-brass-600"> That is what the first second of certainty cost.</span>
+            Seventy years of fieldwork, thousands of surveyors, and an empire that wanted its tax rolls to balance.
+            <span className="text-brass-600"> That is what the first accurate map of India cost.</span>
           </p>
         </div>
       </section>
