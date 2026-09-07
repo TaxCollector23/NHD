@@ -8,16 +8,19 @@ import { useState } from 'react'
 const STEPS = [
   {
     k: 'Measure one line',
-    body: 'Measure between two points you can walk. This is the only distance anyone measures.',
+    body: 'Measure between two points you can walk between. The only distance anyone measures directly.',
   },
   {
     k: 'Sight the far point twice',
-    body: 'From each end, aim at the same hilltop and record the angle off the baseline.',
+    body: 'Stand at each end, aim at the same hilltop, write down the angle.',
   },
-  { k: 'Calculate the rest', body: 'One side and its two end angles fix the triangle. The distances follow.' },
+  {
+    k: 'Calculate the rest',
+    body: 'One side and the two angles at its ends fix the whole triangle.',
+  },
   {
     k: 'Use it as the next baseline',
-    body: 'A calculated side starts the next triangle. Chained far enough, it crosses anything.',
+    body: 'A calculated side starts the next triangle. Chain enough of them and you can cross anything.',
   },
 ]
 

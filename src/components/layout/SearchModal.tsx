@@ -28,9 +28,27 @@ import { sources } from '../../data/sources'
 */
 
 type Result =
-  | { type: 'page'; label: string; hint: string; to: string; Icon: React.ComponentType<any> }
-  | { type: 'glossary'; label: string; hint: string; to: string; Icon: React.ComponentType<any> }
-  | { type: 'source'; label: string; hint: string; to: string; Icon: React.ComponentType<any> }
+  | {
+      type: 'page'
+      label: string
+      hint: string
+      to: string
+      Icon: React.ComponentType<any>
+    }
+  | {
+      type: 'glossary'
+      label: string
+      hint: string
+      to: string
+      Icon: React.ComponentType<any>
+    }
+  | {
+      type: 'source'
+      label: string
+      hint: string
+      to: string
+      Icon: React.ComponentType<any>
+    }
 
 const PAGE_HINTS: Record<string, string> = {
   '/': 'The question the survey set out to answer.',

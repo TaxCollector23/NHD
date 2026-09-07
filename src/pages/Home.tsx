@@ -6,10 +6,30 @@ import HeroSection from '../components/hero/HeroSection'
 // Three narrative destinations plus the evidence. Each hook is the question
 // that page answers, not a summary of it.
 const path = [
-  { n: '01', to: '/innovation', label: 'Innovation', hook: 'What was actually new.' },
-  { n: '02', to: '/impact', label: 'Impact', hook: 'One framework, and who ran it.' },
-  { n: '03', to: '/change', label: 'Change', hook: 'A mountain measured from a desk.' },
-  { n: '04', to: '/sources', label: 'Sources', hook: 'The document behind every claim.' },
+  {
+    n: '01',
+    to: '/innovation',
+    label: 'Innovation',
+    hook: 'What was actually new about it.',
+  },
+  {
+    n: '02',
+    to: '/impact',
+    label: 'Impact',
+    hook: 'The network, and who built it.',
+  },
+  {
+    n: '03',
+    to: '/change',
+    label: 'Change',
+    hook: 'How a mountain got measured from a desk.',
+  },
+  {
+    n: '04',
+    to: '/sources',
+    label: 'Sources',
+    hook: 'Where every claim here comes from.',
+  },
 ]
 
 export default function Home() {
@@ -20,9 +40,9 @@ export default function Home() {
       {/* Cold open. The thesis and the hook in one breath, before any navigation. */}
       <section className="container-museum pt-12 pb-10">
         <p className="max-w-[42em] font-display text-[1.8rem] md:text-[2.35rem] leading-[1.2] text-ink-900 text-balance">
-          Your phone finds you in one second.{' '}
+          Your phone finds you in about a second.{' '}
           <span className="text-brass-600">
-            Doing the same for a subcontinent took seventy years and a small army of surveyors.
+            The first time anyone did that for a subcontinent, it took seventy years and thousands of people.
           </span>
         </p>
       </section>

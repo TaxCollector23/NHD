@@ -8,9 +8,17 @@ import { pageSections } from '../lib/pages'
 
 const rows: { topic: string; then: string; now: string }[] = [
   { topic: 'Angles', then: 'A brass circle', now: 'Timing from orbit' },
-  { topic: 'Arithmetic', then: 'Logarithm tables', now: 'Solvers, in seconds' },
-  { topic: 'Reference', then: 'A survey-made shape', now: 'A satellite frame' },
-  { topic: 'Labour', then: 'A field-and-office workforce', now: 'A distributed satellite network' },
+  {
+    topic: 'Arithmetic',
+    then: 'Log tables and clerks',
+    now: 'A chip, instantly',
+  },
+  {
+    topic: 'Reference',
+    then: 'A shape the survey computed',
+    now: 'A satellite frame',
+  },
+  { topic: 'Labour', then: 'Thousands of people', now: 'A satellite network' },
 ]
 
 export default function Change() {
@@ -24,25 +32,24 @@ export default function Change() {
 
       {/* ── 01 · Peak XV ───────────────────────────────────────────────── */}
       <section id="peak" className="scroll-mt-28">
-        <h2 className="section-title">A mountain measured from a hundred miles away</h2>
-        <Standfirst>One height nobody could reach.</Standfirst>
+        <h2 className="section-title">Measured from a hundred miles away</h2>
+        <Standfirst>A height nobody could reach.</Standfirst>
 
         <p className="lede">
-          Before the framework existed, the height of the remote summit the survey numbered Peak XV was simply
-          unknowable: estimates varied, with no way to settle which was right.
+          Before the framework existed, nobody could say how tall the summit the survey numbered Peak XV was. Estimates
+          disagreed, with no way to settle which was right.
         </p>
 
         <p className="body-text mt-5">
-          Once the framework existed, the question became a calculation. Observers over a hundred miles from Peak XV
-          measured the angle of elevation to its summit. Calcutta corrected those angles for the Earth's curvature and
-          for refraction, light bending through air, then returned a height: 29,002 feet, published in 1856. The modern
-          figure is 29,032.
+          With the framework in place it became arithmetic. Observers more than a hundred miles away measured the angle
+          up to the summit. Calcutta corrected those angles for the curve of the Earth and for refraction, the bending
+          of light through air. The answer, published in 1856, was 29,002 feet. Today's figure is 29,032.
         </p>
 
         <p className="body-text mt-4">
-          An inaccessible height had become a figure an office could derive at a desk. Radhanath Sikdar's office
-          performed that computation, part of a collective process; calling him Everest's discoverer overstates it, and
-          the popular anecdote that Waugh added two feet to round the figure remains undocumented.
+          A mountain nobody could climb had become a number worked out at a desk. Radhanath Sikdar's office did that
+          computation, though it was collective work. Calling him the discoverer of Everest claims more than the record
+          supports, and the story that Waugh added two feet to avoid a round number is documented nowhere.
         </p>
 
         <div className="mt-8">
@@ -52,24 +59,24 @@ export default function Change() {
         <TimelineStrip
           from={1847}
           to={1865}
-          caption="The stretch of years this section covers, from the publication of the survey’s own measurements to the adoption of the name."
+          caption="The stretch of years this section covers, from the survey publishing its own measurements to the name being adopted."
         />
       </section>
 
       {/* ── 02 · What continued ────────────────────────────────────────── */}
       <section id="after" className="scroll-mt-28 mt-16 border-t border-earth-500/20 pt-12">
-        <h2 className="section-title">What continued after the survey ended</h2>
-        <Standfirst>What outlived the survey.</Standfirst>
+        <h2 className="section-title">What continued afterward</h2>
+        <Standfirst>What stayed.</Standfirst>
 
         <p className="lede">
-          Records, instruments, and procedure outlasted the careers that produced them. The undertaking became the
-          permanent Survey of India, tying later work back to that same trigonometrical control.
+          The records, instruments, and working methods outlasted the careers that produced them. The undertaking became
+          the permanent Survey of India, still tying new work back to the same control.
         </p>
 
         <p className="body-text mt-5">
-          Satellite positioning performs the equivalent function today: a receiver calculates its distance from
-          satellites whose positions are already known, the same maneuver as fixing a station from a network of known
-          points. The technology shares nothing with the nineteenth-century method.
+          Satellite positioning does the same job now. A receiver works out how far it is from satellites whose
+          positions are already known, the same move as fixing a station from known points. The technology has nothing
+          in common with the old method, but the problem is the same.
         </p>
 
         <section className="mt-8 card-parchment overflow-hidden">
@@ -97,26 +104,25 @@ export default function Change() {
 
       {/* ── 03 · Why it matters now ────────────────────────────────────── */}
       <section id="today" className="scroll-mt-28 mt-16 border-t border-earth-500/20 pt-12">
-        <h2 className="section-title">Why this matters to someone who has never heard of it</h2>
-        <Standfirst>The opening question, answered.</Standfirst>
+        <h2 className="section-title">Why any of this matters now</h2>
+        <Standfirst>The question at the top.</Standfirst>
 
         <p className="lede">
-          Where am I, and how far away is that? A smartphone answers within a second, making precise position feel like
-          an inherent fact of the world. It is not: someone built the first such framework, deliberately and slowly,
-          checking every measurement against another.
+          Where am I, and how far is it to there? A phone answers both in about a second, which makes exact position
+          feel like something the world comes with. Someone had to build the first framework that could answer it.
         </p>
 
         <p className="body-text mt-5">
-          That framework served two purposes at once: it advanced knowledge of the Earth's true shape, and it made an
-          occupied territory easier to tax, move troops through, and hold. Both were what it was for.
+          It taught the world a great deal about the shape of the Earth, and it made an occupied territory easier to
+          tax, march through, and hold. Both of those were the point.
         </p>
 
         {/* Closes the loop opened by the cold open on the home page. */}
         <div className="mt-10 max-w-[42em]">
           <div className="rule-ticks mb-5" aria-hidden />
           <p className="font-display text-[1.5rem] md:text-[1.95rem] leading-[1.25] text-ink-900 text-balance">
-            Seventy years, an army of surveyors, and an empire's reasons for financing them.
-            <span className="text-brass-600"> That is what one second of certainty cost to build the first time.</span>
+            Seventy years, thousands of surveyors, and an empire with reasons of its own for paying.
+            <span className="text-brass-600"> That is what the first second of certainty cost.</span>
           </p>
         </div>
       </section>

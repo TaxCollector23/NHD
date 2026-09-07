@@ -24,8 +24,8 @@ export default function Glossary() {
     <div className="container-museum py-8 md:py-10">
       <h1 className="page-title">Glossary</h1>
       <p className="mt-5 max-w-2xl text-lg text-ink-800/85 leading-relaxed">
-        Technical terms used in the exhibit. Alphabetical. Also available as tooltips on any dotted-underlined term in a
-        chapter.
+        Every technical term used on this site, in alphabetical order. Any term with a dotted underline in a chapter
+        shows the same definition if you hover it.
       </p>
 
       <div className="mt-8 max-w-md">
@@ -69,7 +69,7 @@ export default function Glossary() {
           </div>
         ))}
         {!groups.length && (
-          <div className="text-earth-600">No terms match "{q}". Try a shorter query, or clear the search.</div>
+          <div className="text-earth-600">Nothing matches "{q}". Try a shorter word, or clear the search.</div>
         )}
       </div>
     </div>

@@ -37,7 +37,7 @@ const PRESETS: Preset[] = [
     A: 78,
     B: 72,
     blurb:
-      'Lambton measured his first baseline near St. Thomas Mount. Every later distance traces back to a line like this one. The length shown here is a teaching value, not the survey’s own recorded figure.',
+      'Lambton measured his first baseline near St. Thomas Mount. Every later distance traces back to a line like this one. The length here is a teaching value, not the survey’s own recorded figure.',
   },
   {
     id: 'arc',
@@ -47,7 +47,7 @@ const PRESETS: Preset[] = [
     A: 74,
     B: 68,
     blurb:
-      'A typical triangle in the meridian arc: two ridge stations sighted a third point from a measured baseline in the plains.',
+      'A typical triangle in the meridian arc. Two stations on ridges sighted a third point from a baseline measured down in the plains.',
   },
   {
     id: 'peakxv',
@@ -57,7 +57,7 @@ const PRESETS: Preset[] = [
     A: 85,
     B: 88,
     blurb:
-      'Long, narrow triangles from Bengal observation stations let Radhanath Sikdar fix Peak XV by computation, without going near the mountain.',
+      'Long, thin triangles from stations in Bengal let Radhanath Sikdar’s office fix Peak XV by computation, without anyone going near the mountain.',
   },
 ]
 
@@ -151,8 +151,15 @@ export default function TriangleSimulator({ onReadout }: { onReadout?: (r: Reado
               claim="Demonstrates the triangulation method the survey used."
               note="The geometry (Law of Sines) and the error-propagation model are standard and correct. The specific baselines and angles are teaching values, not the Survey's recorded observations."
               sources={[
-                { text: 'Method: Law of Sines; first-order error propagation (Bomford, Geodesy)', type: 'Secondary' },
-                { text: 'Real baseline and angle tables, in the Everest 1847 Account', type: 'Primary', needed: true },
+                {
+                  text: 'Method: Law of Sines; first-order error propagation (Bomford, Geodesy)',
+                  type: 'Secondary',
+                },
+                {
+                  text: 'Real baseline and angle tables, in the Everest 1847 Account',
+                  type: 'Primary',
+                  needed: true,
+                },
               ]}
             />
           </div>
@@ -182,7 +189,11 @@ export default function TriangleSimulator({ onReadout }: { onReadout?: (r: Reado
             B={angleB}
             err={
               mode === 'error' && uncertainty
-                ? { visHalfDeg: uncertainty.visHalfDeg, metres: uncertainty.chainMetres, factor: uncertainty.factor }
+                ? {
+                    visHalfDeg: uncertainty.visHalfDeg,
+                    metres: uncertainty.chainMetres,
+                    factor: uncertainty.factor,
+                  }
                 : null
             }
           />
@@ -343,7 +354,12 @@ function TriangleCanvas({
   const cent = { x: (Ax + Bx + Cx) / 3, y: (Ay + By + Cy) / 3 }
 
   // Uncertainty fans + spread at C (visual; the real ± is printed in the panel).
-  let errShapes: { fanA: string; fanB: string; rC: number; label: string } | null = null
+  let errShapes: {
+    fanA: string
+    fanB: string
+    rC: number
+    label: string
+  } | null = null
   if (err && !g.invalid) {
     const h = (err.visHalfDeg * Math.PI) / 180
     const fan = (vx: number, vy: number) => {
@@ -561,27 +577,27 @@ function GuidedExplanation({ g, c, A, B }: { g: ReturnType<typeof solve>; c: num
     {
       n: 1,
       title: 'Measure one distance on the ground.',
-      body: `You measured the baseline, c = ${c.toFixed(2)} km. This is the only physical measurement here. Everything else is computed.`,
+      body: `You measured the baseline, c = ${c.toFixed(2)} km. That is the only thing here anyone actually measured. The rest is computed.`,
     },
     {
       n: 2,
-      title: 'Point a theodolite (an angle-measuring telescope) from each end.',
+      title: 'Aim a theodolite, an angle-measuring telescope, from each end.',
       body: `From A, the target sits at ${A.toFixed(0)}°. From B, it sits at ${B.toFixed(0)}°.`,
     },
     {
       n: 3,
       title: 'A triangle’s angles always add up to 180°.',
-      body: `So the far angle, at the target C, must be 180° − ${A.toFixed(0)}° − ${B.toFixed(0)}° = ${g.C.toFixed(1)}°, without ever standing at C.`,
+      body: `So the angle at the target, C, has to be 180° − ${A.toFixed(0)}° − ${B.toFixed(0)}° = ${g.C.toFixed(1)}°, and nobody had to stand at C to get it.`,
     },
     {
       n: 4,
       title: 'The Law of Sines turns those angles into distances.',
-      body: `A to C is ${g.b.toFixed(2)} km, B to C is ${g.a.toFixed(2)} km, and the target sits ${g.height.toFixed(2)} km beyond the baseline. In 1802 this was hand-computed from logarithm tables, not a calculator.`,
+      body: `A to C is ${g.b.toFixed(2)} km, B to C is ${g.a.toFixed(2)} km, and the target sits ${g.height.toFixed(2)} km beyond the baseline. In 1802 that was worked out by hand off logarithm tables.`,
     },
     {
       n: 5,
       title: 'Reuse a computed side as the next baseline.',
-      body: 'Move to the far end of side a, and it becomes the measured edge of a new triangle, no new ground measurement needed. Chained thousands of times, this is how the survey walked from Madras toward the Himalayas.',
+      body: 'Move to the far end of side a and it becomes the known edge of a new triangle, with no new ground measurement. Chained thousands of times, that is how the survey got from Madras to the Himalayas.',
     },
   ]
   return (

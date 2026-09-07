@@ -16,7 +16,16 @@ import { CircleCheck, Compass, FlaskConical, X } from 'lucide-react'
 
 export type EpistemicKind = 'verified' | 'reconstruction' | 'illustrative'
 
-const META: Record<EpistemicKind, { label: string; Icon: typeof Compass; ring: string; text: string; dot: string }> = {
+const META: Record<
+  EpistemicKind,
+  {
+    label: string
+    Icon: typeof Compass
+    ring: string
+    text: string
+    dot: string
+  }
+> = {
   verified: {
     label: 'Verified historical data',
     Icon: CircleCheck,
@@ -40,7 +49,12 @@ const META: Record<EpistemicKind, { label: string; Icon: typeof Compass; ring: s
   },
 }
 
-export type SourceRef = { text: string; type?: 'Primary' | 'Secondary'; needed?: boolean; url?: string }
+export type SourceRef = {
+  text: string
+  type?: 'Primary' | 'Secondary'
+  needed?: boolean
+  url?: string
+}
 
 export default function EpistemicBadge({
   kind,

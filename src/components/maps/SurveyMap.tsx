@@ -8,7 +8,10 @@ import { GREAT_ARC_PX, projectLL } from '../../lib/projection'
 import EpistemicBadge from '../ui/EpistemicBadge'
 import FlashOnChange from '../ui/FlashOnChange'
 
-const candidateStations = datasetStations.map((s) => ({ ...s, ...projectLL(s.lng, s.lat) }))
+const candidateStations = datasetStations.map((s) => ({
+  ...s,
+  ...projectLL(s.lng, s.lat),
+}))
 
 const YEAR_MIN = 1802
 const YEAR_MAX = 1871

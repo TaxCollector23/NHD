@@ -44,8 +44,8 @@ export default function HeroSection() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.25 }}
           >
-            From 1802 to 1871, surveyors set out to fix the position of every landmark in India. How do you measure
-            ground you cannot walk, and what changes once you can?
+            From 1802 to 1871, British and Indian surveyors fixed the exact position of places all across India. Most of
+            that ground they never walked across.
           </motion.p>
 
           <motion.p
@@ -54,8 +54,8 @@ export default function HeroSection() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.35 }}
           >
-            The innovation was not an instrument. The geometry was two centuries old. What was new was the framework,
-            and the seventy years of holding it together.
+            The geometry was already two hundred years old. The hard part was holding one plan together across a
+            subcontinent for seventy years.
           </motion.p>
 
           <motion.div
@@ -118,7 +118,11 @@ export default function HeroSection() {
                     strokeLinejoin="round"
                     initial={{ opacity: 0, pathLength: 0 }}
                     animate={{ opacity: 0.85, pathLength: 1 }}
-                    transition={{ delay: 0.9 + i * 0.1, duration: 0.55, ease: 'easeOut' }}
+                    transition={{
+                      delay: 0.9 + i * 0.1,
+                      duration: 0.55,
+                      ease: 'easeOut',
+                    }}
                   />
                 )
               })}
@@ -128,15 +132,19 @@ export default function HeroSection() {
                   key={s.id}
                   initial={{ opacity: 0, scale: 0 }}
                   animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: 0.8 + i * 0.05, type: 'spring', stiffness: 200 }}
+                  transition={{
+                    delay: 0.8 + i * 0.05,
+                    type: 'spring',
+                    stiffness: 200,
+                  }}
                 >
                   <circle cx={s.x} cy={s.y} r="3.2" fill="#0f1a2b" />
                 </motion.g>
               ))}
             </svg>
             <p className="note-text mt-2">
-              Station coordinates are real places. The mesh joining them is a teaching schematic, not the historical
-              network.
+              The station coordinates are real places. The mesh drawn between them is there to explain the idea, and is
+              not the historical network.
             </p>
           </div>
         </div>

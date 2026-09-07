@@ -31,7 +31,7 @@ const people: Person[] = [
     role: 'Founder of the survey',
     stage: 'Field observation',
     imgSrc: '/portraits/lambton.jpg',
-    body: 'Began the work in 1802 and ran it until he died in the field, 1823.',
+    body: 'Started the work in 1802 and ran it until he died in the field in 1823.',
   },
   {
     key: 'everest',
@@ -41,7 +41,7 @@ const people: Person[] = [
     role: 'Surveyor General, 1830 to 1843',
     stage: 'Instrument and method',
     imgSrc: '/portraits/everest.jpg',
-    body: 'Standardised the instruments and published the survey’s own measurements in 1847.',
+    body: 'Made the instruments and methods consistent. Published the survey’s own measurements in 1847.',
   },
   {
     key: 'waugh',
@@ -51,7 +51,7 @@ const people: Person[] = [
     role: 'Surveyor General from 1843',
     stage: 'Direction',
     imgSrc: '/portraits/waugh.jpg',
-    body: 'Directed the survey while Peak XV was established as highest known, and proposed the name.',
+    body: 'Ran the survey when Peak XV was worked out to be the highest known summit. Proposed the name.',
   },
   {
     key: 'sikdar',
@@ -62,7 +62,7 @@ const people: Person[] = [
     role: 'Chief computer, Calcutta office',
     stage: 'Computing office',
     imgSrc: '/portraits/sikdar.jpg',
-    body: 'Led the office that turned field angles into positions, and wrote the 1850 snow-peak procedure.',
+    body: 'Ran the office that turned field angles into positions. Wrote the 1850 procedure for snow peaks.',
   },
   {
     key: 'teams',
@@ -82,7 +82,7 @@ const people: Person[] = [
     role: 'Survey explorer',
     stage: 'Beyond the arc',
     imgSrc: '/portraits/nainsingh.jpg',
-    body: 'Walked routes into Tibet recording positions, carrying the method past the original arc.',
+    body: 'Walked routes into Tibet recording positions, taking the method well past the original arc.',
   },
 ]
 
@@ -100,18 +100,18 @@ export default function Impact() {
 
       {/* ── 01 · The framework ─────────────────────────────────────────── */}
       <section id="framework" className="scroll-mt-28">
-        <h2 className="section-title">What seventy years of measuring produced</h2>
-        <Standfirst>What the framework enabled.</Standfirst>
+        <h2 className="section-title">What seventy years produced</h2>
+        <Standfirst>What they ended up with.</Standfirst>
 
         <p className="lede">
-          The result sounds modest and was not: points across India whose positions were known precisely and relative to
-          each other. Later surveyors could start from one.
+          What they ended up with sounds small. Points across India whose positions were known accurately, and known in
+          relation to each other. Later surveyors could start from one instead of starting over.
         </p>
 
         <p className="body-text mt-5">
-          The survey called this a geodetic framework: measurements accounting for the Earth's curvature, not a flat
-          sheet. Coverage stayed uneven, but this one framework supplied the standard other surveys were checked
-          against, what contemporaries called the undisputed ground of Indian geography.
+          The survey called this a geodetic framework: the measurements accounted for the curve of the Earth rather than
+          treating India as flat. Coverage stayed uneven, but other surveys were checked against this one, which people
+          at the time called the undisputed ground of Indian geography.
         </p>
 
         <div className="mt-8">
@@ -121,10 +121,10 @@ export default function Impact() {
         <ForScale>The Great Arc ran roughly 1,600 miles (Keay). New York to Denver is about 1,630.</ForScale>
 
         <div className="mt-12">
-          <h3 className="sub-title mb-1">The order things happened in</h3>
+          <h3 className="sub-title mb-1">How it went, in order</h3>
           <p className="note-text mb-5 max-w-[38em]">
-            Ten dates, each carrying the document it comes from. This is the one part of the site built on verified
-            historical data rather than on a model of the method.
+            Ten dates, each with the document it comes from. Everything else on this site models how a method worked.
+            This part is straight historical record.
           </p>
           <TimelineScrubber />
         </div>
@@ -136,8 +136,8 @@ export default function Impact() {
         <Standfirst>The workforce behind it.</Standfirst>
 
         <p className="lede">
-          A framework is also a workforce, and that workforce is part of the impact. Running one for seventy years meant
-          training people, splitting the work into roles, and refilling them as people died.
+          A framework like this is also a workforce. Running it for seventy years meant training people, splitting the
+          work into jobs, and refilling them as people died.
         </p>
 
         <div className="mt-8 flex flex-wrap items-center gap-x-2 gap-y-2">
@@ -151,7 +151,7 @@ export default function Impact() {
           ))}
         </div>
         <p className="note-text mt-2">
-          Each role below sits on one stage of this line. The labour underlies all of them.
+          Each role below sits on one stage of this line. The labour holds up all of them.
         </p>
 
         <div className="mt-8 grid md:grid-cols-3 gap-8">
@@ -209,24 +209,23 @@ export default function Impact() {
         <TimelineStrip
           from={1830}
           to={1865}
-          caption="The dates the people above are anchored to. Everest, Waugh, and Sikdar overlap across a single stretch of the survey’s middle decades."
+          caption="The dates the people above are anchored to. Everest, Waugh, and Sikdar all overlap across the same stretch of the survey’s middle decades."
         />
 
         <div className="mt-10 max-w-[40em]">
-          <h3 className="sub-title mb-3">Who paid, and who was credited</h3>
+          <h3 className="sub-title mb-3">Who paid, who got credit</h3>
           <p className="body-text">
-            Historian Matthew Edney argues this mapping helped construct British India as an idea. Indian and British
-            workers built the network; officers took the credit.
+            The historian Matthew Edney argues this kind of mapping helped build the idea of British India in the first
+            place. Indian and British workers did the measuring. The officers got the credit.
           </p>
         </div>
 
         <div className="mt-10 max-w-[40em]">
-          <h3 className="sub-title mb-3">The influence that outlasted the arc</h3>
+          <h3 className="sub-title mb-3">Influence past the arc</h3>
           <p className="body-text">
-            The habits Lambton built outlasted the Great Arc itself. Later Survey of India work kept tying itself to the
-            same trigonometrical control, one shared system instead of scattered local surveys. Nain Singh Rawat carried
-            that influence furthest: sent into Tibet, where British officers could not go, he recorded position the way
-            the survey had trained him to. The instrument changed; the discipline did not.
+            The working habits outlasted the Great Arc. Later Survey of India work kept tying itself back to the same
+            trigonometrical control, so the country had one shared system instead of scattered local surveys. Nain Singh
+            Rawat took it furthest, sent into Tibet where British officers could not go.
           </p>
         </div>
       </section>

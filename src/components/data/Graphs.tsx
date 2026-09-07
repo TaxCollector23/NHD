@@ -19,7 +19,13 @@ const GRID = '#b28c50'
 
 // ─── Chart 4 — Peak XV vs its rivals ────────────────────────────────────────
 
-type Peak = { peak: string; short: string; height: number; thought: number; note: string }
+type Peak = {
+  peak: string
+  short: string
+  height: number
+  thought: number
+  note: string
+}
 const PEAKS: Peak[] = [
   {
     peak: 'Chimborazo (Andes)',
@@ -75,8 +81,14 @@ export function PeaksHeightChart() {
           claim="Modern published summit elevations of four Himalayan/Andean peaks."
           note="The bar heights are standard modern elevations, independently checkable in any reference. The 'believed tallest' years are approximate, drawn from secondary histories, so treat those as context rather than as precise data."
           sources={[
-            { text: 'Modern published elevations (e.g. Survey of India / standard references)', type: 'Secondary' },
-            { text: 'Keay, The Great Arc; Edney, Mapping an Empire', type: 'Secondary' },
+            {
+              text: 'Modern published elevations (e.g. Survey of India / standard references)',
+              type: 'Secondary',
+            },
+            {
+              text: 'Keay, The Great Arc; Edney, Mapping an Empire',
+              type: 'Secondary',
+            },
           ]}
         />
       }

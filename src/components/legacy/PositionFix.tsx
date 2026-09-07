@@ -90,7 +90,10 @@ export default function PositionFix({ onReadout }: { onReadout?: (r: Readout[]) 
       f ? Math.hypot(f.x - TRUE_POS.x, f.y - TRUE_POS.y).toFixed(1) : 'no crossing'
     onReadout([
       { label: 'Bearing noise, left panel', value: `${angleErr.toFixed(2)}°` },
-      { label: 'Range noise, right panel', value: `${rangeErr.toFixed(1)} units` },
+      {
+        label: 'Range noise, right panel',
+        value: `${rangeErr.toFixed(1)} units`,
+      },
       { label: 'Bearings miss the truth by', value: `${off(fix1850)}` },
       { label: 'Ranges miss the truth by', value: `${off(fixGPS)}` },
     ])
@@ -106,7 +109,12 @@ export default function PositionFix({ onReadout }: { onReadout?: (r: Readout[]) 
               kind="illustrative"
               claim="A geometry comparison of two ways to fix a position."
               note="Both panels show the same idea: intersect measurements taken from references whose positions you already know. The shapes are real geometry. There are no timing or accuracy numbers, because a like-for-like comparison of the two eras is not supported by the evidence, and this is not a claim that satellite positioning descends from the survey."
-              sources={[{ text: 'Resection and trilateration are standard positioning methods', type: 'Secondary' }]}
+              sources={[
+                {
+                  text: 'Resection and trilateration are standard positioning methods',
+                  type: 'Secondary',
+                },
+              ]}
             />
           </div>
           <div className="text-xs text-earth-600 mt-1">

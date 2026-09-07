@@ -128,7 +128,12 @@ export default function TheodoliteViewer({ onReadout }: { onReadout?: (r: Readou
                 return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke="#5b3a1e" strokeWidth="0.6" />
               })}
               {/* red pointer, rotates with telescope */}
-              <g style={{ transformOrigin: '200px 325px', transform: `rotate(${rot}deg)` }}>
+              <g
+                style={{
+                  transformOrigin: '200px 325px',
+                  transform: `rotate(${rot}deg)`,
+                }}
+              >
                 <line x1="200" y1="325" x2="200" y2="300" stroke="#7a2020" strokeWidth="2" />
                 <polygon points="200,298 195,308 205,308" fill="#7a2020" />
               </g>
@@ -165,7 +170,10 @@ export default function TheodoliteViewer({ onReadout }: { onReadout?: (r: Readou
             {/* Telescope = part 1 */}
             <motion.g
               animate={{ rotate: rot }}
-              style={{ transformOrigin: '200px 265px', transformBox: 'view-box' as any }}
+              style={{
+                transformOrigin: '200px 265px',
+                transformBox: 'view-box' as any,
+              }}
               transition={{ type: 'spring', stiffness: 60, damping: 12 }}
             >
               <rect

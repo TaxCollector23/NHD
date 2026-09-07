@@ -18,8 +18,14 @@ export default function FlashOnChange({
   return (
     <motion.div
       key={value}
-      initial={{ boxShadow: '0 0 0 2px rgba(224,148,28,0.95)', backgroundColor: 'rgba(224,148,28,0.16)' }}
-      animate={{ boxShadow: '0 0 0 2px rgba(224,148,28,0)', backgroundColor: 'rgba(224,148,28,0)' }}
+      initial={{
+        boxShadow: '0 0 0 2px rgba(224,148,28,0.95)',
+        backgroundColor: 'rgba(224,148,28,0.16)',
+      }}
+      animate={{
+        boxShadow: '0 0 0 2px rgba(224,148,28,0)',
+        backgroundColor: 'rgba(224,148,28,0)',
+      }}
       transition={{ duration: 0.85, ease: 'easeOut' }}
       className={`rounded ${className}`}
     >

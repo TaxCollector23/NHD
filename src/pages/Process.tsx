@@ -13,20 +13,37 @@ const built: Item[] = [
     label:
       'Interactive tools collected on one page: triangle simulator with error propagation, theodolite viewer with eyepiece and vernier, height calculator, and position-fix comparison. The survey map and the date sequence sit on the Impact page.',
   },
-  { done: true, label: 'An evidence badge on every interactive and chart (verified, reconstruction, or illustrative)' },
+  {
+    done: true,
+    label: 'An evidence badge on every interactive and chart (verified, reconstruction, or illustrative)',
+  },
   {
     done: true,
     label: 'Real d3-geo Mercator projection over a hand-embedded India polygon, rivers, Himalayan shading, Andamans',
   },
-  { done: true, label: 'Searchable glossary, with terms also defined inline on first use' },
-  { done: true, label: '⌘K search across pages, glossary, sources' },
-  { done: true, label: 'Arrow-key slideshow, route preloading, reduced-motion support' },
-  { done: true, label: 'Code-split SPA, custom favicon, OG social image, 404 page' },
   {
     done: true,
-    label: 'Portrait images in public/portraits/: Lambton, Everest, Waugh, Sikdar, Nain Singh, and a period illustration of the Indian survey team',
+    label: 'Searchable glossary, with terms also defined inline on first use',
   },
-  { done: true, label: 'Student-composed prose kept under the 1,200-word cap (run `npm run words` after any prose edit to re-check)' },
+  { done: true, label: '⌘K search across pages, glossary, sources' },
+  {
+    done: true,
+    label: 'Arrow-key slideshow, route preloading, reduced-motion support',
+  },
+  {
+    done: true,
+    label: 'Code-split SPA, custom favicon, OG social image, 404 page',
+  },
+  {
+    done: true,
+    label:
+      'Portrait images in public/portraits/: Lambton, Everest, Waugh, Sikdar, Nain Singh, and a period illustration of the Indian survey team',
+  },
+  {
+    done: true,
+    label:
+      'Student-composed prose kept under the 1,200-word cap (run `npm run words` after any prose edit to re-check)',
+  },
 ]
 
 const todo: Item[] = [

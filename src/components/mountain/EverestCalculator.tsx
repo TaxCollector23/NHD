@@ -95,9 +95,18 @@ export default function EverestCalculator({ onReadout }: { onReadout?: (r: Reado
     onReadout([
       { label: 'Distance to the peak', value: `${distance.toFixed(0)} km` },
       { label: 'Angle up to the summit', value: `${angle.toFixed(2)}°` },
-      { label: 'Height from the raw sight line', value: `${Math.round(heightMeters).toLocaleString()} m` },
-      { label: 'Curvature and refraction correction', value: `+ ${Math.round(curvatureDrop).toLocaleString()} m` },
-      { label: 'Corrected height', value: `${Math.round(correctedM).toLocaleString()} m` },
+      {
+        label: 'Height from the raw sight line',
+        value: `${Math.round(heightMeters).toLocaleString()} m`,
+      },
+      {
+        label: 'Curvature and refraction correction',
+        value: `+ ${Math.round(curvatureDrop).toLocaleString()} m`,
+      },
+      {
+        label: 'Corrected height',
+        value: `${Math.round(correctedM).toLocaleString()} m`,
+      },
     ])
   }, [onReadout, distance, angle, heightMeters, curvatureDrop, correctedM])
 
@@ -139,8 +148,15 @@ export default function EverestCalculator({ onReadout }: { onReadout?: (r: Reado
             claim="Demonstrates how a peak's height is derived from a distant angle."
             note="The geometry and the curvature-and-refraction correction are standard and correct. The inputs are teaching values, not the survey's real Peak XV stations, angles, or corrections, and this does not reproduce Sikdar's computation. The modern figure of 8,848 m is shown for scale only; the model is not tuned to reproduce it."
             sources={[
-              { text: 'Trig heighting + curvature/refraction (Bomford, Geodesy)', type: 'Secondary' },
-              { text: 'The real Peak XV observation table, in Waugh 1851', type: 'Primary', needed: true },
+              {
+                text: 'Trig heighting + curvature/refraction (Bomford, Geodesy)',
+                type: 'Secondary',
+              },
+              {
+                text: 'The real Peak XV observation table, in Waugh 1851',
+                type: 'Primary',
+                needed: true,
+              },
             ]}
           />
         </div>

@@ -52,7 +52,10 @@ export default function TimelineScrubber() {
     const loop = (t: number) => {
       if (t - last > 1600) {
         idx = Math.min(idx + 1, timeline.length - 1)
-        itemRefs.current[idx]?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        itemRefs.current[idx]?.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        })
         last = t
         if (idx >= timeline.length - 1) {
           setPlaying(false)
@@ -157,10 +160,16 @@ export default function TimelineScrubber() {
           <EpistemicBadge
             kind="verified"
             claim="Ten dates, each with a named source."
-            note="This is the one dataset in the project that can be shown as historical fact rather than as a teaching model. Every entry is tied to a specific document: Rennell 1788, Everest 1847, Waugh 1851, the Historical Records of the Survey of India, or Smith 1999."
+            note="This is the one dataset here that can be shown as historical fact rather than as a teaching model. Every entry is tied to a specific document: Rennell 1788, Everest 1847, Waugh 1851, the Historical Records of the Survey of India, or Smith 1999."
             sources={[
-              { text: 'Historical Records of the Survey of India (Phillimore)', type: 'Secondary' },
-              { text: 'Everest 1847; Waugh 1851; Rennell 1788', type: 'Primary' },
+              {
+                text: 'Historical Records of the Survey of India (Phillimore)',
+                type: 'Secondary',
+              },
+              {
+                text: 'Everest 1847; Waugh 1851; Rennell 1788',
+                type: 'Primary',
+              },
             ]}
           />
         </div>
