@@ -8,8 +8,10 @@ import type { ReactNode } from 'react'
 */
 export default function Standfirst({ children }: { children: ReactNode }) {
   return (
-    <p className="mt-3 mb-6 max-w-[34em] border-l-2 border-brass-500/45 pl-4
-                  font-display italic text-[1.1rem] md:text-[1.18rem] leading-snug text-earth-700">
+    <p
+      className="mt-3 mb-6 max-w-[34em] border-l-2 border-brass-500/45 pl-4
+                  font-display italic text-[1.1rem] md:text-[1.18rem] leading-snug text-earth-700"
+    >
       {children}
     </p>
   )

@@ -3,12 +3,12 @@
 // the same import() a second time, before the user navigates, warms the
 // chunk without duplicating work.
 export const routePreloaders: Record<string, () => Promise<unknown>> = {
-  '/':           () => Promise.resolve(),          // eager
+  '/': () => Promise.resolve(), // eager
   '/innovation': () => import('../pages/Innovation'),
-  '/impact':     () => import('../pages/Impact'),
-  '/change':     () => import('../pages/Change'),
-  '/tools':      () => import('../pages/Tools'),
-  '/sources':    () => import('../pages/Sources'),
-  '/glossary':   () => import('../pages/Glossary'),
-  '/process':    () => import('../pages/Process'),
+  '/impact': () => import('../pages/Impact'),
+  '/change': () => import('../pages/Change'),
+  '/tools': () => import('../pages/Tools'),
+  '/sources': () => import('../pages/Sources'),
+  '/glossary': () => import('../pages/Glossary'),
+  '/process': () => import('../pages/Process'),
 }

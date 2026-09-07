@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react'
 import EpistemicBadge, { type EpistemicKind, type SourceRef } from './EpistemicBadge'
+import FlashOnChange from './FlashOnChange'
 
 export type Readout = { label: string; value: string }
 
@@ -12,7 +13,18 @@ export type Readout = { label: string; value: string }
   On narrow screens the columns stack, tool first, explanation underneath.
 */
 export default function ToolPanel({
-  id, n, title, question, kind, claim, note, sources, explain, readouts, footer, children,
+  id,
+  n,
+  title,
+  question,
+  kind,
+  claim,
+  note,
+  sources,
+  explain,
+  readouts,
+  footer,
+  children,
 }: {
   id: string
   n: number
@@ -28,7 +40,10 @@ export default function ToolPanel({
   children: ReactNode
 }) {
   return (
-    <section id={id} className="scroll-mt-28 border-t border-earth-500/20 pt-10 mt-10 first:border-0 first:pt-0 first:mt-0">
+    <section
+      id={id}
+      className="scroll-mt-28 border-t border-earth-500/20 pt-10 mt-10 first:border-0 first:pt-0 first:mt-0"
+    >
       <div className="flex items-baseline gap-3 mb-1">
         <span className="field-num">{String(n).padStart(2, '0')}</span>
         <h2 className="section-title">{title}</h2>
@@ -46,20 +61,19 @@ export default function ToolPanel({
 
           {readouts && readouts.length > 0 && (
             <div className="rounded-md border border-ink-900/15 bg-ink-900 text-parchment-50 p-5">
-              <div className="text-[0.75rem] uppercase tracking-[0.2em] text-brass-400 mb-3">
-                Live result
-              </div>
+              <div className="text-[0.75rem] uppercase tracking-[0.2em] text-brass-400 mb-3">Live result</div>
               <dl className="space-y-2.5">
-                {readouts.map(r => (
-                  <div key={r.label} className="flex items-baseline justify-between gap-4">
+                {readouts.map((r) => (
+                  <FlashOnChange
+                    key={r.label}
+                    value={r.value}
+                    className="flex items-baseline justify-between gap-4 px-1.5 -mx-1.5 py-0.5 -my-0.5"
+                  >
                     <dt className="text-[0.92rem] text-parchment-200/85">{r.label}</dt>
                     <dd className="font-mono text-[1.05rem] text-brass-300 tabular-nums text-right">{r.value}</dd>
-                  </div>
+                  </FlashOnChange>
                 ))}
               </dl>
-              <p className="note-text text-parchment-200/70 mt-4 pt-3 border-t border-parchment-50/15">
-                These numbers change as you move the controls.
-              </p>
             </div>
           )}
 

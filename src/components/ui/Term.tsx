@@ -22,7 +22,7 @@ export default function Term({ children, k }: { children: React.ReactNode; k?: s
     <span ref={ref} className="relative inline-block">
       <button
         type="button"
-        onClick={() => setOpen(o => !o)}
+        onClick={() => setOpen((o) => !o)}
         onMouseEnter={() => setOpen(true)}
         onFocus={() => setOpen(true)}
         className="underline decoration-dotted decoration-brass-500/70 underline-offset-2 hover:text-brass-600 focus:text-brass-600 focus:outline-none cursor-help"

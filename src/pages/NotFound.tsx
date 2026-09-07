@@ -8,10 +8,11 @@ export default function NotFound() {
       <div className="page-eyebrow">Off the survey</div>
       <h1 className="page-title mt-2">This point is not on our chart</h1>
       <p className="mt-4 max-w-md mx-auto text-ink-800/85 leading-relaxed">
-        The page you asked for isn’t in the network. Head back to a known
-        station and pick another chapter.
+        The page you asked for isn’t in the network. Head back to a known station and pick another chapter.
       </p>
-      <Link to="/" className="btn-primary mt-6 inline-flex"><Home className="w-4 h-4" /> Back to Home</Link>
+      <Link to="/" className="btn-primary mt-6 inline-flex">
+        <Home className="w-4 h-4" /> Back to Home
+      </Link>
     </div>
   )
 }

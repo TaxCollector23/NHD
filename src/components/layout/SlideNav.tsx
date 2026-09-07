@@ -14,8 +14,13 @@ export default function SlideNav() {
       const t = e.target as HTMLElement | null
       if (t && ['INPUT', 'TEXTAREA', 'SELECT', 'BUTTON'].includes(t.tagName)) return
       if (e.metaKey || e.ctrlKey || e.altKey) return
-      if (e.key === 'ArrowRight' && next) { e.preventDefault(); nav(next.to) }
-      else if (e.key === 'ArrowLeft' && prev) { e.preventDefault(); nav(prev.to) }
+      if (e.key === 'ArrowRight' && next) {
+        e.preventDefault()
+        nav(next.to)
+      } else if (e.key === 'ArrowLeft' && prev) {
+        e.preventDefault()
+        nav(prev.to)
+      }
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
@@ -29,13 +34,17 @@ export default function SlideNav() {
             <ChevronLeft className="w-5 h-5 group-hover:-translate-x-0.5 transition-transform" />
             <span className="font-display text-lg">{prev.label}</span>
           </Link>
-        ) : <span />}
+        ) : (
+          <span />
+        )}
         {next ? (
           <Link to={next.to} className="group inline-flex items-center gap-2 hover:text-brass-600 transition-colors">
             <span className="font-display text-lg">{next.label}</span>
             <ChevronRight className="w-5 h-5 group-hover:translate-x-0.5 transition-transform" />
           </Link>
-        ) : <span />}
+        ) : (
+          <span />
+        )}
       </div>
     </nav>
   )

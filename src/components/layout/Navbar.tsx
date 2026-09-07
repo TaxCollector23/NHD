@@ -9,7 +9,9 @@ export default function Navbar({ onOpenSearch }: { onOpenSearch?: () => void }) 
   const loc = useLocation()
   const isMac = typeof navigator !== 'undefined' && /Mac/i.test(navigator.platform)
 
-  useEffect(() => { setMobileOpen(false) }, [loc.pathname])
+  useEffect(() => {
+    setMobileOpen(false)
+  }, [loc.pathname])
 
   return (
     <header className="sticky top-0 z-40 bg-parchment-50 border-b border-earth-500/20">
@@ -27,15 +29,17 @@ export default function Navbar({ onOpenSearch }: { onOpenSearch?: () => void }) 
         </Link>
 
         <nav className="hidden lg:flex items-center gap-1" aria-label="Primary">
-          {primaryNav.map(l => (
+          {primaryNav.map((l) => (
             <NavLink
               key={l.to}
               to={l.to}
               end={l.to === '/'}
-              className={({ isActive }) => cn(
-                'relative px-3.5 py-2 text-[1rem] rounded-md transition-colors whitespace-nowrap',
-                isActive ? 'text-ink-900 font-medium' : 'text-ink-800/75 hover:text-ink-900'
-              )}
+              className={({ isActive }) =>
+                cn(
+                  'relative px-3.5 py-2 text-[1rem] rounded-md transition-colors whitespace-nowrap',
+                  isActive ? 'text-ink-900 font-medium' : 'text-ink-800/75 hover:text-ink-900',
+                )
+              }
             >
               {({ isActive }) => (
                 <>
@@ -62,7 +66,7 @@ export default function Navbar({ onOpenSearch }: { onOpenSearch?: () => void }) 
             </button>
           )}
           <button
-            onClick={() => setMobileOpen(o => !o)}
+            onClick={() => setMobileOpen((o) => !o)}
             className="lg:hidden p-2 rounded-md hover:bg-parchment-200 transition-colors"
             aria-label="Toggle menu"
           >
@@ -74,27 +78,32 @@ export default function Navbar({ onOpenSearch }: { onOpenSearch?: () => void }) 
       {mobileOpen && (
         <div className="lg:hidden border-t border-earth-500/15 bg-parchment-50/95 animate-page-in">
           <div className="container-museum py-3 flex flex-col gap-1">
-            {primaryNav.map(l => (
+            {primaryNav.map((l) => (
               <NavLink
                 key={l.to}
                 to={l.to}
                 end={l.to === '/'}
-                className={({ isActive }) => cn(
-                  'px-3 py-2.5 rounded-md',
-                  isActive ? 'bg-parchment-200 font-medium' : 'hover:bg-parchment-200/60'
-                )}
-              >{l.label}</NavLink>
+                className={({ isActive }) =>
+                  cn('px-3 py-2.5 rounded-md', isActive ? 'bg-parchment-200 font-medium' : 'hover:bg-parchment-200/60')
+                }
+              >
+                {l.label}
+              </NavLink>
             ))}
             <div className="border-t border-earth-500/15 my-2" />
-            {secondaryNav.map(l => (
+            {secondaryNav.map((l) => (
               <NavLink
                 key={l.to}
                 to={l.to}
-                className={({ isActive }) => cn(
-                  'px-3 py-2 text-[0.95rem] rounded-md text-ink-800/85',
-                  isActive ? 'bg-parchment-200 font-medium' : 'hover:bg-parchment-200/60'
-                )}
-              >{l.label}</NavLink>
+                className={({ isActive }) =>
+                  cn(
+                    'px-3 py-2 text-[0.95rem] rounded-md text-ink-800/85',
+                    isActive ? 'bg-parchment-200 font-medium' : 'hover:bg-parchment-200/60',
+                  )
+                }
+              >
+                {l.label}
+              </NavLink>
             ))}
           </div>
         </div>

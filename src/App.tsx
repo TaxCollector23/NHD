@@ -10,13 +10,13 @@ import { routePreloaders } from './lib/preload'
 
 // Pages are code-split so the initial payload is just Home plus the shell.
 const Innovation = lazy(() => import('./pages/Innovation'))
-const Impact     = lazy(() => import('./pages/Impact'))
-const Change     = lazy(() => import('./pages/Change'))
-const Tools      = lazy(() => import('./pages/Tools'))
-const Sources    = lazy(() => import('./pages/Sources'))
-const Process    = lazy(() => import('./pages/Process'))
-const Glossary   = lazy(() => import('./pages/Glossary'))
-const NotFound   = lazy(() => import('./pages/NotFound'))
+const Impact = lazy(() => import('./pages/Impact'))
+const Change = lazy(() => import('./pages/Change'))
+const Tools = lazy(() => import('./pages/Tools'))
+const Sources = lazy(() => import('./pages/Sources'))
+const Process = lazy(() => import('./pages/Process'))
+const Glossary = lazy(() => import('./pages/Glossary'))
+const NotFound = lazy(() => import('./pages/NotFound'))
 
 function Loading() {
   return (
@@ -30,7 +30,9 @@ function Loading() {
 export default function App() {
   const location = useLocation()
   const [searchOpen, setSearchOpen] = useState(false)
-  useEffect(() => { window.scrollTo({ top: 0, behavior: 'auto' }) }, [location.pathname])
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'auto' })
+  }, [location.pathname])
 
   // Whenever the current route changes, warm the prev/next chunks so
   // pressing ← / → feels instant.
@@ -40,8 +42,12 @@ export default function App() {
       typeof (window as any).requestIdleCallback === 'function'
         ? (window as any).requestIdleCallback(cb)
         : setTimeout(cb, 300)
-    idle(() => { if (n.prev) routePreloaders[n.prev.to]?.() })
-    idle(() => { if (n.next) routePreloaders[n.next.to]?.() })
+    idle(() => {
+      if (n.prev) routePreloaders[n.prev.to]?.()
+    })
+    idle(() => {
+      if (n.next) routePreloaders[n.next.to]?.()
+    })
   }, [location.pathname])
 
   // Global ⌘K / Ctrl+K opens the search modal.
@@ -59,21 +65,24 @@ export default function App() {
   // Update <title> per route so the browser tab reads sensibly.
   useEffect(() => {
     const map: Record<string, string> = {
-      '/':           SITE_NAME_FULL,
+      '/': SITE_NAME_FULL,
       '/innovation': `Innovation · ${SITE_NAME}`,
-      '/impact':     `Impact · ${SITE_NAME}`,
-      '/change':     `Change · ${SITE_NAME}`,
-      '/tools':      `Try the tools · ${SITE_NAME}`,
-      '/sources':    `Sources · ${SITE_NAME}`,
-      '/glossary':   `Glossary · ${SITE_NAME}`,
-      '/process':    `Process and build notes · ${SITE_NAME}`,
+      '/impact': `Impact · ${SITE_NAME}`,
+      '/change': `Change · ${SITE_NAME}`,
+      '/tools': `Try the tools · ${SITE_NAME}`,
+      '/sources': `Sources · ${SITE_NAME}`,
+      '/glossary': `Glossary · ${SITE_NAME}`,
+      '/process': `Process and build notes · ${SITE_NAME}`,
     }
     document.title = map[location.pathname] || SITE_NAME_FULL
   }, [location.pathname])
 
   return (
     <div className="min-h-full flex flex-col">
-      <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 z-50 bg-ink-900 text-parchment-50 px-3 py-1.5 rounded text-sm">
+      <a
+        href="#main"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 z-50 bg-ink-900 text-parchment-50 px-3 py-1.5 rounded text-sm"
+      >
         Skip to main content
       </a>
       <Navbar onOpenSearch={() => setSearchOpen(true)} />

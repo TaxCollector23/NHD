@@ -12,18 +12,22 @@ export const SITE_NAME_FULL = 'The Great Trigonometrical Survey of India'
   from in-page links and the footer, not the primary nav.
 */
 export const primaryNav: PageMeta[] = [
-  { to: '/',           label: 'Home',       blurb: 'The question the survey set out to answer.' },
+  { to: '/', label: 'Home', blurb: 'The question the survey set out to answer.' },
   { to: '/innovation', label: 'Innovation', blurb: 'What the survey built, and why it counted as new.' },
-  { to: '/impact',     label: 'Impact',     blurb: 'One framework across a subcontinent, and the workforce that ran it.' },
-  { to: '/change',     label: 'Change',     blurb: 'A mountain measured from a desk, and what came after.' },
-  { to: '/sources',    label: 'Sources',    blurb: 'Every claim, and the evidence behind it.' },
+  { to: '/impact', label: 'Impact', blurb: 'One framework across a subcontinent, and the workforce that ran it.' },
+  { to: '/change', label: 'Change', blurb: 'A mountain measured from a desk, and what came after.' },
+  { to: '/sources', label: 'Sources', blurb: 'Every claim, and the evidence behind it.' },
 ]
 
 // Secondary destinations: linked from the pages and the footer.
 export const secondaryNav: PageMeta[] = [
-  { to: '/tools',    label: 'Try the tools', blurb: 'Every interactive model in one place.' },
-  { to: '/glossary', label: 'Glossary',      blurb: 'Technical terms, defined plainly.' },
-  { to: '/process',  label: 'Process & build notes', blurb: 'How the site was made. Not part of the exhibit narrative.' },
+  { to: '/tools', label: 'Try the tools', blurb: 'Every interactive model in one place.' },
+  { to: '/glossary', label: 'Glossary', blurb: 'Technical terms, defined plainly.' },
+  {
+    to: '/process',
+    label: 'Process & build notes',
+    blurb: 'How the site was made. Not part of the exhibit narrative.',
+  },
 ]
 
 // Reading order for the prev/next arrows at the foot of each page.
@@ -34,7 +38,7 @@ export const pageOrder: PageMeta[] = [
 ]
 
 export function neighbours(pathname: string) {
-  const idx = pageOrder.findIndex(p => p.to === pathname)
+  const idx = pageOrder.findIndex((p) => p.to === pathname)
   if (idx < 0) return { idx: 0, prev: null, next: null, current: null, total: pageOrder.length }
   return {
     idx,
@@ -50,17 +54,17 @@ export type SectionMeta = { id: string; label: string }
 
 export const pageSections: Record<string, SectionMeta[]> = {
   '/innovation': [
-    { id: 'problem',     label: 'The problem' },
-    { id: 'method',      label: 'How it worked' },
+    { id: 'problem', label: 'The problem' },
+    { id: 'method', label: 'How it worked' },
     { id: 'instruments', label: 'The instruments' },
   ],
   '/impact': [
     { id: 'framework', label: 'The framework' },
-    { id: 'people',    label: 'Who did the work' },
+    { id: 'people', label: 'Who did the work' },
   ],
   '/change': [
-    { id: 'peak',   label: 'Peak XV' },
-    { id: 'after',  label: 'What continued' },
-    { id: 'today',  label: 'Why it matters now' },
+    { id: 'peak', label: 'Peak XV' },
+    { id: 'after', label: 'What continued' },
+    { id: 'today', label: 'Why it matters now' },
   ],
 }

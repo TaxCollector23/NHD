@@ -25,8 +25,10 @@ export default function SectionNav({ sections }: { sections: SectionMeta[] }) {
   }, [sections])
 
   return (
-    <div className="sticky top-[3.5rem] z-30 -mx-6 md:-mx-10 lg:-mx-14 mb-8
-                    border-b border-earth-500/20 bg-parchment-50/95 backdrop-blur-sm">
+    <div
+      className="sticky top-[3.5rem] z-30 -mx-6 md:-mx-10 lg:-mx-14 mb-8
+                    border-b border-earth-500/20 bg-parchment-50/95 backdrop-blur-sm"
+    >
       <nav className="container-museum flex gap-1 overflow-x-auto py-2" aria-label="Sections on this page">
         {sections.map((s, i) => (
           <a
@@ -36,7 +38,7 @@ export default function SectionNav({ sections }: { sections: SectionMeta[] }) {
               'whitespace-nowrap rounded-md px-3 py-1.5 text-[0.95rem] transition-colors flex items-center gap-2',
               active === s.id
                 ? 'bg-ink-900 text-parchment-50'
-                : 'text-ink-800/75 hover:bg-parchment-200/70 hover:text-ink-900'
+                : 'text-ink-800/75 hover:bg-parchment-200/70 hover:text-ink-900',
             )}
           >
             <span className={cn('font-mono text-[0.75rem]', active === s.id ? 'text-brass-300' : 'text-brass-600')}>

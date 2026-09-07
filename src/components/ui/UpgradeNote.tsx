@@ -13,10 +13,10 @@ export default function UpgradeNote({ what }: { what: string }) {
         <span className="page-eyebrow text-survey-600">What would make this real data</span>
       </div>
       <p className="caption-text">
-        {what} Those figures sit in George Everest's 1847 <i>Account of the Measurement of Two Sections
-        of the Meridional Arc of India</i> and in Andrew Waugh's 1851 report on the survey's operations.
-        Neither has been transcribed into a usable dataset yet, so this stays a working model of the
-        method. Transcribing them is the next piece of research this project needs.
+        {what} Those figures sit in George Everest's 1847{' '}
+        <i>Account of the Measurement of Two Sections of the Meridional Arc of India</i> and in Andrew Waugh's 1851
+        report on the survey's operations. Neither has been transcribed into a usable dataset yet, so this stays a
+        working model of the method. Transcribing them is the next piece of research this project needs.
       </p>
     </div>
   )

@@ -40,7 +40,7 @@ const META: Record<EpistemicKind, { label: string; Icon: typeof Compass; ring: s
   },
 }
 
-export type SourceRef = { text: string; type?: 'Primary' | 'Secondary'; needed?: boolean }
+export type SourceRef = { text: string; type?: 'Primary' | 'Secondary'; needed?: boolean; url?: string }
 
 export default function EpistemicBadge({
   kind,
@@ -64,17 +64,22 @@ export default function EpistemicBadge({
     const onDown = (e: MouseEvent) => {
       if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false)
     }
-    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setOpen(false) }
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setOpen(false)
+    }
     window.addEventListener('mousedown', onDown)
     window.addEventListener('keydown', onKey)
-    return () => { window.removeEventListener('mousedown', onDown); window.removeEventListener('keydown', onKey) }
+    return () => {
+      window.removeEventListener('mousedown', onDown)
+      window.removeEventListener('keydown', onKey)
+    }
   }, [open])
 
   return (
     <span ref={ref} className={`relative inline-flex ${className}`}>
       <button
         type="button"
-        onClick={() => setOpen(o => !o)}
+        onClick={() => setOpen((o) => !o)}
         aria-expanded={open}
         aria-label={`Evidence: ${m.label}. Open source note.`}
         className={`group inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.14em] transition-colors ${m.ring} hover:brightness-95 focus:outline-none focus:ring-2 focus:ring-brass-500 focus:ring-offset-1 focus:ring-offset-parchment-50`}
@@ -91,11 +96,17 @@ export default function EpistemicBadge({
           className="absolute left-0 top-full z-50 mt-2 w-80 max-w-[86vw] rounded-lg border border-ink-900/15 bg-parchment-50 p-4 text-left shadow-2xl animate-page-in"
         >
           <span className="flex items-start justify-between gap-3">
-            <span className={`inline-flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-[0.14em] ${m.text}`}>
+            <span
+              className={`inline-flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-[0.14em] ${m.text}`}
+            >
               <span className={`w-1.5 h-1.5 rounded-full ${m.dot}`} />
               {m.label}
             </span>
-            <button onClick={() => setOpen(false)} aria-label="Close" className="text-earth-600 hover:text-ink-900 -mt-1 -mr-1">
+            <button
+              onClick={() => setOpen(false)}
+              aria-label="Close"
+              className="text-earth-600 hover:text-ink-900 -mt-1 -mr-1"
+            >
               <X className="w-3.5 h-3.5" />
             </button>
           </span>
@@ -113,7 +124,18 @@ export default function EpistemicBadge({
                   <li key={i} className="text-[11px] leading-snug text-ink-800/85 flex gap-1.5">
                     <span className="text-brass-600 shrink-0">{s.needed ? '○' : '•'}</span>
                     <span>
-                      {s.text}
+                      {s.url ? (
+                        <a
+                          href={s.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-brass-700 hover:underline"
+                        >
+                          {s.text}
+                        </a>
+                      ) : (
+                        s.text
+                      )}
                       {s.type && <span className="text-earth-600"> · {s.type}</span>}
                       {s.needed && <span className="text-earth-600 italic"> · to be mined/cited</span>}
                     </span>

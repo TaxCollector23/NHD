@@ -109,7 +109,8 @@ export const glossary: Record<string, Term> = {
   },
   chain: {
     term: 'Gunter’s chain',
-    short: 'A physical measuring chain 100 feet or 66 feet long. The surveyor’s standard length unit before steel tapes.',
+    short:
+      'A physical measuring chain 100 feet or 66 feet long. The surveyor’s standard length unit before steel tapes.',
     full: 'The Survey’s baselines were measured with steel chains laid end-to-end under fixed tension and corrected for temperature. Every meaningful chain had its own calibration certificate.',
   },
   ephemeris: {
@@ -129,7 +130,8 @@ export const glossary: Record<string, Term> = {
   },
   ordinance: {
     term: 'Ordnance Survey',
-    short: 'The British national mapping agency that provided the technical model the Great Trigonometrical Survey extended.',
+    short:
+      'The British national mapping agency that provided the technical model the Great Trigonometrical Survey extended.',
     full: 'The Great Trigonometrical Survey used many techniques pioneered by the Ordnance Survey of Great Britain (founded 1791) but had to invent new methods for the tropical climate, longer sightlines, and harder terrain.',
   },
 }

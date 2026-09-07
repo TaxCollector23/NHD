@@ -29,7 +29,7 @@ Do the steps in order.
 - [ ] Timeline: use a **self-made** static/video timeline only — **no third-party timeline embeds** (NHD prohibits them). `public/verified-timeline.svg` → PNG is the ready-made honest option.
 
 ### 6. Check the word count
-- [ ] NHDWebCentral shows a **live word count** on the site automatically. Confirm it is **≤ 1,200**. The React source is already at **1,150** (`npm run words`); if the NHDWebCentral count differs, trim captions first — the narrative is at budget.
+- [ ] NHDWebCentral shows a **live word count** on the site automatically. Confirm it is **≤ 1,200**. The React source is currently at **1,193** (`npm run words` — re-check this yourself before relying on it, since the number moves as the prose is edited); if the NHDWebCentral count differs, trim captions first.
 - [ ] Remember the exclusions: navigation/menu words, media credits, quoted primary-source material, and the bibliography **do not count**; your own descriptive prose **does**.
 
 ### 7. Bibliography page
