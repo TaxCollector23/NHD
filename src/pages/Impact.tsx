@@ -123,8 +123,8 @@ export default function Impact() {
         <div className="mt-12">
           <h3 className="sub-title mb-1">In order</h3>
           <p className="note-text mb-5 max-w-[38em]">
-            Ten dates, each with the document it comes from. Everything else on this site models how a method worked.
-            This part is straight historical record.
+            Ten dates, each with the document it comes from. Everything else on this site models how a method worked,
+            but these are the record itself.
           </p>
           <TimelineScrubber />
         </div>

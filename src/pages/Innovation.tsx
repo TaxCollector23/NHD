@@ -29,8 +29,8 @@ export default function Innovation() {
 
         <p className="body-text mt-5">
           James Rennell and other Company surveyors had charted whole regions by 1788, so the maps were hardly blank.
-          Each region had been surveyed on its own, and nobody could say how far apart any two were. Lambton's idea was
-          to measure one accurate skeleton first, then hang the old maps on it.
+          The trouble was connection. Each region had been surveyed on its own, and nobody could say how far apart any
+          two were. Lambton's idea was to measure one accurate skeleton first, then hang the old maps on it.
         </p>
 
         <div className="mt-8">
@@ -68,11 +68,11 @@ export default function Innovation() {
           <div>
             <h3 className="sub-title">Old technique, new scale</h3>
             <p className="body-text mt-4">
-              European surveyors had solved triangles this way for two hundred years. Keeping it up across a
-              subcontinent for seventy years was new. A parish surveyor solved his one triangle and went home. This
-              survey chained thousands together, kept an office in Calcutta that did nothing but arithmetic, and treated
-              a disagreement between two readings as something to chase down, not round away. Colin Mackenzie set out
-              the principle in 1815: persevere "on one undeviating plan."
+              European surveyors had solved triangles this way for two hundred years. The scale was new. A parish
+              surveyor solved his one triangle and went home. This survey chained thousands together, kept an office in
+              Calcutta that did nothing but arithmetic, and treated a disagreement between two readings as something to
+              chase down, not round away. Colin Mackenzie set out the principle in 1815: persevere "on one undeviating
+              plan."
             </p>
           </div>
         </div>
