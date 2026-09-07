@@ -51,7 +51,7 @@ const people: Person[] = [
     role: 'Surveyor General from 1843',
     stage: 'Direction',
     imgSrc: '/portraits/waugh.jpg',
-    body: 'Ran the survey when Peak XV was worked out to be the highest known summit. Proposed the name.',
+    body: 'Ran the survey when Peak XV was established as the highest known summit. Proposed the name.',
   },
   {
     key: 'sikdar',
@@ -101,17 +101,17 @@ export default function Impact() {
       {/* ── 01 · The framework ─────────────────────────────────────────── */}
       <section id="framework" className="scroll-mt-28">
         <h2 className="section-title">What seventy years produced</h2>
-        <Standfirst>What they ended up with.</Standfirst>
+        <Standfirst>The short answer.</Standfirst>
 
         <p className="lede">
-          What they ended up with sounds small. Points across India whose positions were known accurately, and known in
-          relation to each other. Later surveyors could start from one instead of starting over.
+          It sounds modest said plainly. Points across India whose positions were known accurately, and known in
+          relation to one another, so a later surveyor could start from one instead of starting over.
         </p>
 
         <p className="body-text mt-5">
           The survey called this a geodetic framework: the measurements accounted for the curve of the Earth rather than
-          treating India as flat. Coverage stayed uneven, but other surveys were checked against this one, which people
-          at the time called the undisputed ground of Indian geography.
+          treating India as a flat sheet. Coverage stayed uneven. Even so, other surveys were checked against this one,
+          which people at the time called the undisputed ground of Indian geography.
         </p>
 
         <div className="mt-8">
@@ -121,7 +121,7 @@ export default function Impact() {
         <ForScale>The Great Arc ran roughly 1,600 miles (Keay). New York to Denver is about 1,630.</ForScale>
 
         <div className="mt-12">
-          <h3 className="sub-title mb-1">How it went, in order</h3>
+          <h3 className="sub-title mb-1">In order</h3>
           <p className="note-text mb-5 max-w-[38em]">
             Ten dates, each with the document it comes from. Everything else on this site models how a method worked.
             This part is straight historical record.
@@ -133,11 +133,11 @@ export default function Impact() {
       {/* ── 02 · Who did the work ──────────────────────────────────────── */}
       <section id="people" className="scroll-mt-28 mt-16 border-t border-earth-500/20 pt-12">
         <h2 className="section-title">Who did the work</h2>
-        <Standfirst>The workforce behind it.</Standfirst>
+        <Standfirst>And who never got named.</Standfirst>
 
         <p className="lede">
           A framework like this is also a workforce. Running it for seventy years meant training people, splitting the
-          work into jobs, and refilling them as people died.
+          work into distinct jobs, and refilling those jobs as people died.
         </p>
 
         <div className="mt-8 flex flex-wrap items-center gap-x-2 gap-y-2">
@@ -223,9 +223,9 @@ export default function Impact() {
         <div className="mt-10 max-w-[40em]">
           <h3 className="sub-title mb-3">Influence past the arc</h3>
           <p className="body-text">
-            The working habits outlasted the Great Arc. Later Survey of India work kept tying itself back to the same
-            trigonometrical control, so the country had one shared system instead of scattered local surveys. Nain Singh
-            Rawat took it furthest, sent into Tibet where British officers could not go.
+            The working habits outlasted the Great Arc itself. Later Survey of India work kept tying itself back to the
+            same trigonometrical control, so the country ended up with one shared system rather than scattered local
+            surveys. Nain Singh Rawat carried it furthest, sent into Tibet where British officers could not go.
           </p>
         </div>
       </section>

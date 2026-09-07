@@ -36,14 +36,14 @@ export default function Change() {
         <Standfirst>A height nobody could reach.</Standfirst>
 
         <p className="lede">
-          Before the framework existed, nobody could say how tall the summit the survey numbered Peak XV was. Estimates
-          disagreed, with no way to settle which was right.
+          Before the framework existed, nobody could say how tall the summit the survey had numbered Peak XV was.
+          Estimates circulated and disagreed, with no way to settle which was right.
         </p>
 
         <p className="body-text mt-5">
-          With the framework in place it became arithmetic. Observers more than a hundred miles away measured the angle
-          up to the summit. Calcutta corrected those angles for the curve of the Earth and for refraction, the bending
-          of light through air. The answer, published in 1856, was 29,002 feet. Today's figure is 29,032.
+          With the framework in place, the question became arithmetic. Observers more than a hundred miles off measured
+          the angle up to the summit, and Calcutta corrected it for the curve of the Earth and for refraction, the
+          bending of light through air. The answer, published in 1856, was 29,002 feet. Today's figure is 29,032.
         </p>
 
         <p className="body-text mt-4">
@@ -69,8 +69,8 @@ export default function Change() {
         <Standfirst>What stayed.</Standfirst>
 
         <p className="lede">
-          The records, instruments, and working methods outlasted the careers that produced them. The undertaking became
-          the permanent Survey of India, still tying new work back to the same control.
+          The records, the instruments, and the working methods all outlasted the careers that produced them. The
+          undertaking became the permanent Survey of India, still tying new work back to the same control.
         </p>
 
         <p className="body-text mt-5">
@@ -104,17 +104,18 @@ export default function Change() {
 
       {/* ── 03 · Why it matters now ────────────────────────────────────── */}
       <section id="today" className="scroll-mt-28 mt-16 border-t border-earth-500/20 pt-12">
-        <h2 className="section-title">Why any of this matters now</h2>
+        <h2 className="section-title">Why it matters now</h2>
         <Standfirst>The question at the top.</Standfirst>
 
         <p className="lede">
           Where am I, and how far is it to there? A phone answers both in about a second, which makes exact position
-          feel like something the world comes with. Someone had to build the first framework that could answer it.
+          feel like something the world simply comes with. Someone had to build the first framework that could answer
+          them at all.
         </p>
 
         <p className="body-text mt-5">
-          It taught the world a great deal about the shape of the Earth, and it made an occupied territory easier to
-          tax, march through, and hold. Both of those were the point.
+          The survey taught the world a great deal about the true shape of the Earth, and it made an occupied territory
+          easier to tax, march through, and hold. Both were the point.
         </p>
 
         {/* Closes the loop opened by the cold open on the home page. */}

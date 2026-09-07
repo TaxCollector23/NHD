@@ -12,18 +12,15 @@ import { stations, triangles } from '../../data/locations'
 export default function HeroSection() {
   return (
     <section className="relative overflow-hidden border-b border-earth-500/15">
-      <div aria-hidden className="hero-grid absolute inset-0 opacity-[0.5]" />
-
       <div className="container-museum relative grid lg:grid-cols-[1.12fr_1fr] gap-10 lg:gap-14 items-center py-14 md:py-20">
         <div>
           <motion.div
-            className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[0.78rem] font-semibold uppercase tracking-[0.2em] text-brass-600"
+            className="flex flex-col sm:flex-row sm:items-center gap-y-1 sm:gap-x-3 text-[0.78rem] font-semibold uppercase tracking-[0.2em] text-brass-600"
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.05 }}
           >
             <span>National History Day 2027</span>
-            <span className="text-earth-500/50">·</span>
             <span className="text-earth-600">Innovation in History: Impact, Influence, Change</span>
           </motion.div>
 
@@ -44,8 +41,8 @@ export default function HeroSection() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.25 }}
           >
-            From 1802 to 1871, British and Indian surveyors fixed the exact position of places all across India. Most of
-            that ground they never walked across.
+            From 1802 to 1871, British and Indian surveyors fixed the exact position of places right across India. Most
+            of that ground they never set foot on.
           </motion.p>
 
           <motion.p
@@ -54,8 +51,8 @@ export default function HeroSection() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.35 }}
           >
-            The geometry was already two hundred years old. The hard part was holding one plan together across a
-            subcontinent for seventy years.
+            The geometry was two hundred years old already. What made it hard was holding a single plan together, across
+            a subcontinent, for seventy years.
           </motion.p>
 
           <motion.div
@@ -92,10 +89,6 @@ export default function HeroSection() {
 
         <div className="relative">
           <div className="relative rounded-lg border border-earth-500/20 bg-parchment-50/40 p-4 shadow-sm">
-            <div className="flex items-center justify-between mb-2 text-[0.72rem] uppercase tracking-[0.18em] text-earth-600">
-              <span>Triangulation network · schematic</span>
-              <span className="font-mono text-brass-600">78°E</span>
-            </div>
             <svg
               viewBox={INDIA_VIEWBOX}
               className="w-full h-auto"

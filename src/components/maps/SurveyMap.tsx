@@ -64,7 +64,6 @@ export default function SurveyMap() {
     <div className="card-parchment p-5 md:p-6">
       <div className="flex flex-wrap items-start justify-between gap-3 mb-4">
         <div>
-          <div className="page-eyebrow mb-1">The network over time</div>
           <h3 className="sub-title">1802 to 1871, one year at a time</h3>
         </div>
         <EpistemicBadge

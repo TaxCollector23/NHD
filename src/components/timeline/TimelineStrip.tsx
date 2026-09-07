@@ -14,9 +14,6 @@ export default function TimelineStrip({ from, to, caption }: { from: number; to:
   return (
     <div className="mt-6 card-parchment p-4 md:p-5">
       <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 mb-4">
-        <div className="page-eyebrow">
-          Verified dates · {from} to {to}
-        </div>
         <div className="note-text">Every date below has a named source. See Sources.</div>
       </div>
 

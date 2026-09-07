@@ -18,7 +18,6 @@ export default function CoverageCompare() {
     <figure className="card-parchment p-4 md:p-5">
       <div className="grid sm:grid-cols-2 gap-5">
         <Panel
-          eyebrow="Separately measured"
           title="Good regional work, no shared frame"
           body="Each place fixed accurately by whoever surveyed it. Nothing measured connects one to the next."
         >
@@ -40,7 +39,6 @@ export default function CoverageCompare() {
         </Panel>
 
         <Panel
-          eyebrow="One framework"
           title="Every point tied to every other"
           body="The same places, now joined by measured triangles. Any position can be checked against the whole network."
         >
@@ -74,27 +72,16 @@ export default function CoverageCompare() {
   )
 }
 
-function Panel({
-  eyebrow,
-  title,
-  body,
-  children,
-}: {
-  eyebrow: string
-  title: string
-  body: string
-  children: React.ReactNode
-}) {
+function Panel({ title, body, children }: { title: string; body: string; children: React.ReactNode }) {
   return (
     <div>
-      <div className="page-eyebrow mb-1">{eyebrow}</div>
       <h3 className="sub-title mb-1.5">{title}</h3>
       <p className="caption-text mb-3">{body}</p>
       <svg
         viewBox={INDIA_VIEWBOX}
         className="w-full h-auto rounded border border-earth-500/20"
         role="img"
-        aria-label={`${eyebrow}: ${title}`}
+        aria-label={title}
       >
         <IndiaBackground showLabels={false} />
         {children}

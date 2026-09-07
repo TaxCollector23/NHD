@@ -17,7 +17,7 @@ export default function Navbar({ onOpenSearch }: { onOpenSearch?: () => void }) 
     <header className="sticky top-0 z-40 bg-parchment-50 border-b border-earth-500/20">
       <div className="container-museum flex items-center justify-between h-14 gap-6">
         <Link to="/" className="group flex items-center gap-2.5 shrink-0" aria-label="Home">
-          <span className="relative w-8 h-8 grid place-items-center rounded-full bg-ink-900 text-brass-400 shrink-0 shadow-sm transition-transform duration-300 group-hover:rotate-[20deg]">
+          <span className="relative w-8 h-8 grid place-items-center rounded-full bg-white text-brass-600 border border-earth-500/25 shrink-0 shadow-sm transition-transform duration-300 group-hover:rotate-[20deg]">
             <Compass className="w-4 h-4" />
           </span>
           <span className="font-display text-[1.05rem] font-semibold text-ink-900 tracking-tight whitespace-nowrap">

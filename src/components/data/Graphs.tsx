@@ -74,7 +74,6 @@ export function PeaksHeightChart() {
   return (
     <ChartFrame
       title="Which peak was believed tallest, and when"
-      eyebrow="A moving target"
       badge={
         <EpistemicBadge
           kind="verified"
@@ -104,13 +103,11 @@ export function PeaksHeightChart() {
 
 function ChartFrame({
   title,
-  eyebrow,
   caption,
   badge,
   children,
 }: {
   title: string
-  eyebrow: string
   caption: string
   badge?: React.ReactNode
   children: React.ReactNode
@@ -119,7 +116,6 @@ function ChartFrame({
     <div className="card-parchment p-4">
       <div className="flex items-start justify-between gap-3 mb-3">
         <div>
-          <div className="page-eyebrow mb-1">{eyebrow}</div>
           <h4 className="font-display text-xl">{title}</h4>
         </div>
         {badge}
