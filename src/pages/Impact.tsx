@@ -31,7 +31,7 @@ const people: Person[] = [
     role: 'Founder of the survey',
     stage: 'Field observation',
     imgSrc: '/portraits/lambton.jpg',
-    body: 'Started the work in 1802 and ran it until he died in the field in 1823.',
+    body: 'Started the work in 1802, and died running it in 1823.',
   },
   {
     key: 'everest',
@@ -104,13 +104,13 @@ export default function Impact() {
         <Standfirst>Why it mattered to everyone after.</Standfirst>
 
         <p className="lede">
-          Points across India whose positions were known accurately, and known in relation to one another. A later
+          Points across India whose positions were known accurately, and known relative to each other. A later
           surveyor could start from one of them instead of starting over.
         </p>
 
         <p className="body-text mt-5">
-          The survey called this a geodetic framework: the measurements accounted for the curve of the Earth rather than
-          treating India as a flat sheet. Coverage stayed uneven. Even so, other surveys were checked against this one,
+          The survey called this a geodetic framework — the measurements accounted for the Earth's curve rather than
+          treating India as a flat sheet. Coverage stayed uneven, but other surveys were still checked against this one,
           which the Historical Records of the Survey of India called the undisputed ground of Indian geography.
         </p>
 
@@ -137,7 +137,7 @@ export default function Impact() {
 
         <p className="lede">
           A framework like this is also a workforce. Running it for seventy years meant training people, splitting the
-          work into distinct jobs, and refilling those jobs as people died.
+          work into roles, and refilling them as people died.
         </p>
 
         <div className="mt-8 flex flex-wrap items-center gap-x-2 gap-y-2">
@@ -216,16 +216,16 @@ export default function Impact() {
           <h3 className="sub-title mb-3">Who paid, who got credit</h3>
           <p className="body-text">
             The historian Matthew Edney argues this kind of mapping helped build the idea of British India in the first
-            place. Indian and British workers did the measuring. The officers got the credit.
+            place. Indian and British workers did the measuring; the officers got the credit.
           </p>
         </div>
 
         <div className="mt-10 max-w-[40em]">
           <h3 className="sub-title mb-3">Influence past the arc</h3>
           <p className="body-text">
-            The working habits outlasted the Great Arc itself. Later Survey of India work kept tying itself back to the
-            same trigonometrical control, so the country ended up with one shared system rather than scattered local
-            surveys. Nain Singh Rawat carried it furthest, sent into Tibet where British officers could not go.
+            The working habits outlasted the Great Arc itself. Later Survey of India work kept tying back to the same
+            trigonometrical control, giving the country one shared system rather than scattered local surveys. Nain
+            Singh Rawat carried it furthest, sent into Tibet where British officers could not go.
           </p>
         </div>
       </section>

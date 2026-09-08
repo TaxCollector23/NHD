@@ -41,15 +41,16 @@ export default function Change() {
         </p>
 
         <p className="body-text mt-5">
-          With the framework in place, the question became arithmetic. Observers more than a hundred miles off measured
-          the angle up to the summit, and Calcutta corrected it for the curve of the Earth and for refraction, the
-          bending of light through air. The answer, published in 1856, was 29,002 feet. Today's figure is 29,032.
+          With the framework in place, working out the height was just arithmetic. Observers more than a hundred miles
+          off measured the angle up to the summit, and Calcutta corrected it for the curve of the Earth and for
+          refraction, the bending of light through air. The answer, published in 1856, was 29,002 feet. Today's figure
+          is 29,032.
         </p>
 
         <p className="body-text mt-4">
-          An unclimbed summit had become a number worked out at a desk. Radhanath Sikdar's office did that computation,
-          though it was collective work. Calling him the discoverer of Everest claims more than the record supports, and
-          the story that Waugh added two feet to avoid a round number is documented nowhere.
+          A summit nobody had climbed now had a number, worked out at a desk. Radhanath Sikdar's office did that
+          computation, as part of a team. Calling him Everest's discoverer overstates the record, and the story that
+          Waugh padded the figure by two feet to avoid a round number is undocumented.
         </p>
 
         <div className="mt-8">
@@ -69,13 +70,13 @@ export default function Change() {
         <Standfirst>The Survey of India, and after.</Standfirst>
 
         <p className="lede">
-          The records, the instruments, and the working methods all outlasted the careers that produced them. The
-          undertaking became the permanent Survey of India, still tying new work back to the same control.
+          The records, instruments, and working methods all outlasted the people who built them. The undertaking
+          became the permanent Survey of India, still tied to the same control.
         </p>
 
         <p className="body-text mt-5">
           Satellite positioning does the same job now. A receiver works out how far it is from satellites whose
-          positions are already known, the same move as fixing a station from known points. The two technologies are
+          positions are known, the same move as fixing a station from known points. The two technologies are
           unrelated, though the problem they solve is identical.
         </p>
 
@@ -108,13 +109,13 @@ export default function Change() {
         <Standfirst>What it looks like now.</Standfirst>
 
         <p className="lede">
-          Where am I, and how far is it to there? A phone answers both in about a second, so exact position feels like a
-          fact of the world. Someone had to build the first framework that could answer those questions at all.
+          Where am I, and how far away is that? A phone answers both in about a second, which makes exact position feel
+          like a fact of the world. Someone had to build the first system that could answer those questions at all.
         </p>
 
         <p className="body-text mt-5">
-          The survey taught the world a great deal about the true shape of the Earth. It also made an occupied territory
-          easier to tax, march through, and hold. It was funded for both reasons.
+          The survey taught the world much about the true shape of the Earth, and it made an occupied territory easier
+          to tax, march through, and hold — both were reasons it got funded.
         </p>
 
         {/* Closes the loop opened by the cold open on the home page. */}

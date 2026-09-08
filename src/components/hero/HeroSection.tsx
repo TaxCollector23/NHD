@@ -41,8 +41,8 @@ export default function HeroSection() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.25 }}
           >
-            From 1802 to 1871, British and Indian surveyors fixed the exact position of places right across India. Most
-            of that ground they never set foot on.
+            From 1802 to 1871, British and Indian surveyors fixed the exact position of places across India. Most of
+            that ground they never set foot on.
           </motion.p>
 
           <motion.p
@@ -51,8 +51,8 @@ export default function HeroSection() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.35 }}
           >
-            The geometry was two hundred years old already. The difficulty was holding a single plan together across a
-            subcontinent for seventy years.
+            The geometry itself was already two hundred years old. What took seventy years was holding one plan
+            together across a whole subcontinent.
           </motion.p>
 
           <motion.div

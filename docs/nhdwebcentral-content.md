@@ -5,7 +5,7 @@ This is the **exact current prose** from the live React site, re-extracted direc
 `Standfirst`, `ForScale`, `BaselineSteps`) on 2026-09-04. Keep this open in one tab and paste
 block by block into NHDWebCentral. Do not re-edit while pasting.
 
-**Word count of the student-composed prose = 1,193 / 1,200** (`npm run words`, re-run at the
+**Word count of the student-composed prose = 1,168 / 1,200** (`npm run words`, re-run at the
 time this doc was regenerated). This document lists every block that script counts, plus the
 uncounted interface text (nav hooks' surrounding chrome, eyebrows, `note-text` asides) needed
 to actually rebuild the page, each one labelled so you know which is which.
@@ -16,9 +16,9 @@ element that needs a static replacement (see `interactive-replacements.md`).
 
 Two small components repeat on every narrative page and are easy to paste-over by accident —
 call them out explicitly here:
-- **ThreadKicker** — one line, identical on Innovation, Impact, and Change: *"The innovation:
-  one framework, one plan, one subcontinent, seventy years of checking."* It sits right under
-  each page's H1. Paste it three times, once per page.
+- **ThreadKicker** — one line, identical on Innovation, Impact, and Change: *"One plan, held for
+  seventy years, every measurement checked twice."* It sits right under each page's H1. Paste it
+  three times, once per page.
 - **Standfirst** — a short italic deck line under each section H2. There are eight of them
   across the three narrative pages. They are real, word-counted prose, not decoration — the
   previous version of this document omitted all eight.
@@ -35,8 +35,8 @@ in History: Impact, Influence, Change
 **Subhead:** From 1802 to 1871, surveyors set out to fix the position of every landmark in
 India. How do you measure ground you cannot walk, and what changes once you can?
 
-**Answer:** The innovation was not an instrument. The geometry was two centuries old. What was
-new was the framework, and the seventy years of holding it together.
+**Answer:** The innovation was not an instrument. The geometry itself was already two centuries
+old. What took seventy years was holding one framework together across a whole subcontinent.
 
 **Stat line (interface chrome, not word-counted):** 1802 first baseline measured · 1818 named
 the Great Trigonometrical Survey · Peak XV calculated, not climbed
@@ -62,8 +62,7 @@ these one-line hooks, which **are** word-counted:
 
 **H1:** A system built to measure a subcontinent
 
-**ThreadKicker:** The innovation: one framework, one plan, one subcontinent, seventy years of
-checking.
+**ThreadKicker:** One plan, held for seventy years, every measurement checked twice.
 
 ### Section 1 — H2: Why measurement mattered
 
@@ -74,9 +73,9 @@ itself by taxing land. Troops had to be moved, and authority asserted over groun
 hold.
 
 **Prose:** Maps already existed. James Rennell and other Company surveyors had charted whole
-regions by 1788. The gap was connection: each region was surveyed separately, so distances
-between them stayed unknown. William Lambton proposed measuring one precise skeleton first,
-then hanging every later map on it.
+regions by 1788, so the maps weren't blank — the gap was connection: each region was surveyed
+separately, so distances between them stayed unknown. William Lambton's idea: measure one
+precise skeleton first, then hang every later map on it.
 
 **[INTERACTIVE]** Two-panel coverage comparison (separately measured points vs. one connected
 framework). Static export of both panels side by side. Caption: *"A diagram of two ways to
@@ -117,13 +116,14 @@ component — its step text **is** word-counted narrative and must be pasted ver
 
 **H3:** The technique was old. The scale was not.
 
-**Prose:** None of this was new. European surveyors had solved triangles this way for two
-centuries. The new part was doing it continuously, across a subcontinent, for seventy years.
+**Prose:** None of this was new — European surveyors had solved triangles this way for two
+centuries, so the math wasn't new. The scale was: doing it continuously, across a subcontinent,
+for seventy years.
 
 **Prose:** A parish surveyor solved one triangle and went home. This survey chained thousands
-together, kept an office in Calcutta whose only job was the arithmetic, and made investigating
-disagreement a procedure. Colin Mackenzie named the principle in 1815: persevere "on one
-undeviating plan."
+together, ran an office in Calcutta that did nothing but arithmetic, and chased down any
+disagreement between two readings instead of rounding it away. Colin Mackenzie put the principle
+in writing in 1815: persevere "on one undeviating plan."
 
 **[LINK]** A call-out linking to the tools page, with a `note-text` line (not word-counted):
 *"Working models of every method described here, including one that shows how a small angle
@@ -135,9 +135,10 @@ this becomes a plain link to whichever page carries the media substitutes.
 **Standfirst:** Where the accuracy came from.
 
 **Prose:** A theodolite is a telescope that swings against finely divided circles, letting an
-observer read where it points. Accuracy came from repetition: star sightings fixed latitude
-independently, and angles were corrected for refraction, the bending of light through air. W.
-Hodson recorded the rule: investigate discrepancies, never conceal them.
+observer read exactly where it points. The instrument mattered less than the habit of repeating
+the reading. Latitude was checked against the stars, and angles were corrected for refraction,
+the bending of light through air. W. Hodson recorded the rule: investigate discrepancies, never
+conceal them.
 
 **Three cards (plain text, word-counted):**
 - **Baseline apparatus** — Two metals paired so heat expansion cancelled itself.
@@ -154,21 +155,20 @@ widely but none of them could be traced to a document, so none of them appear he
 
 **H1:** From one triangle to a subcontinent
 
-**ThreadKicker:** The innovation: one framework, one plan, one subcontinent, seventy years of
-checking.
+**ThreadKicker:** One plan, held for seventy years, every measurement checked twice.
 
 ### Section 1 — H2: What seventy years of measuring produced
 
 **Standfirst:** What the framework enabled.
 
 **Prose:** The result sounds modest and was not: points across India whose positions were
-known precisely and relative to each other. Later surveyors could start from one.
+known accurately, and known relative to each other. A later surveyor could start from one of
+them instead of starting over.
 
-**Prose:** The survey called this a geodetic framework: measurements accounting for the
-Earth's curvature, not a flat sheet. Later surveys tied to it became comparable.
-
-**Prose:** Coverage stayed uneven. This one supplied the standard other surveys were checked
-against, what contemporaries called the undisputed ground of Indian geography.
+**Prose:** The survey called this a geodetic framework — the measurements accounted for the
+Earth's curve rather than treating India as a flat sheet. Coverage stayed uneven, but other
+surveys were still checked against this one, which contemporaries called the undisputed ground
+of Indian geography.
 
 **[INTERACTIVE]** Survey map with the year slider and a labelled Play button, 1802 to 1871.
 Screen recording is strongly preferred here; the growth over time is the point.
@@ -189,16 +189,15 @@ model of the method."*
 
 **Standfirst:** The workforce behind it.
 
-**Prose:** A framework is also a workforce, and that workforce is part of the impact. Running
-one for seventy years meant training people, splitting the work into roles, and refilling them
-as people died.
+**Prose:** A framework like this is also a workforce. Running it for seventy years meant
+training people, splitting the work into roles, and refilling them as people died.
 
 **Production line (plain text row, interface chrome):** Field observation → Instrument reading
 → Computing office → Published position
 
 **Six roles (paste as a plain list; the tabbed component has no equivalent):**
-- **Initiation — William Lambton, 1753 to 1823.** Founder of the survey. Began the work in
-  1802 and ran it until he died in the field, 1823.
+- **Initiation — William Lambton, 1753 to 1823.** Founder of the survey. Started the work in
+  1802, and died running it in 1823.
 - **Standardisation — George Everest, 1790 to 1866.** Surveyor General, 1830 to 1843.
   Standardised the instruments and published the survey's own measurements in 1847.
 - **Administration — Andrew Scott Waugh, 1810 to 1878.** Surveyor General from 1843. Directed
@@ -217,17 +216,16 @@ decades."*
 
 **H3:** Who paid, and who was credited
 
-**Prose:** The historian Matthew Edney argues that mapping of this kind helped construct the
-idea of British India. Indian and British workers built the network; officers took the credit.
+**Prose:** The historian Matthew Edney argues this kind of mapping helped build the idea of
+British India in the first place. Indian and British workers did the measuring; the officers
+got the credit.
 
 **H3:** The influence that outlasted the arc
 
-**Prose (new — added after the previous version of this document was written):** The habits
-Lambton built did not stop when the Great Arc did. Later Survey of India work kept tying itself
-back to the same trigonometrical control, one shared system instead of scattered local surveys.
-Nain Singh Rawat carried that influence furthest: a Pundit explorer sent into Tibet, where
-British parties could not go, he still recorded position the way the survey had trained him to.
-The instrument changed. The discipline did not.
+**Prose:** The working habits outlasted the Great Arc itself. Later Survey of India work kept
+tying back to the same trigonometrical control, giving the country one shared system rather
+than scattered local surveys. Nain Singh Rawat carried it furthest, sent into Tibet where
+British officers could not go.
 
 ---
 
@@ -235,8 +233,7 @@ The instrument changed. The discipline did not.
 
 **H1:** From unknowable to computable
 
-**ThreadKicker:** The innovation: one framework, one plan, one subcontinent, seventy years of
-checking.
+**ThreadKicker:** One plan, held for seventy years, every measurement checked twice.
 
 ### Section 1 — H2: A mountain measured from a hundred miles away
 
@@ -245,14 +242,15 @@ checking.
 **Prose:** Before the framework existed, nobody could establish the height of the remote
 Himalayan peak the survey numbered Peak XV. You could only guess, and guesses disagreed.
 
-**Prose:** Once it existed, the question became arithmetic. Observers more than a hundred miles
-from Peak XV measured the angle up to its summit. Calcutta corrected those angles for the
-Earth's curve and the bending of light through air, then returned a height: 29,002 feet,
-published in 1856. The modern figure is 29,032.
+**Prose:** With the framework in place, working out the height was just arithmetic. Observers
+more than a hundred miles off measured the angle up to the summit, and Calcutta corrected it
+for the curve of the Earth and for refraction, the bending of light through air. The answer,
+published in 1856, was 29,002 feet. Today's figure is 29,032.
 
-**Prose:** A height nobody could reach had become a number an office could calculate. That is
-the change. Radhanath Sikdar's office did the computation, part of a collective process.
-Calling him Everest's discoverer overstates it, and the two-feet-added story is undocumented.
+**Prose:** A summit nobody had climbed now had a number, worked out at a desk. Radhanath
+Sikdar's office did that computation, as part of a team. Calling him Everest's discoverer
+overstates the record, and the story that Waugh padded the figure by two feet to avoid a round
+number is undocumented.
 
 **[INTERACTIVE]** Peak comparison chart ("Which peak was believed tallest, and when"). This one
 uses real modern elevations and may be exported as a static image with its source note.
@@ -265,12 +263,12 @@ name."*
 
 **Standfirst:** What outlived the survey.
 
-**Prose:** Records, instruments, and procedure outlived the careers that made them. The project
-became the permanent Survey of India, and later work was tied to the same control.
+**Prose:** The records, instruments, and working methods all outlasted the people who built
+them. The undertaking became the permanent Survey of India, still tied to the same control.
 
-**Prose:** Satellite positioning does that job now. A receiver measures its distance from
-satellites whose positions are known, the same move as fixing a station from the network. The
-technology shares nothing.
+**Prose:** Satellite positioning does the same job now. A receiver works out how far it is from
+satellites whose positions are known, the same move as fixing a station from known points. The
+two technologies are unrelated, though the problem they solve is identical.
 
 **Four-row table (rebuild as a simple HTML table or a clean list — a "Labour" row was added
 after the previous version of this document was written):**
@@ -286,13 +284,12 @@ after the previous version of this document was written):**
 
 **Standfirst:** The opening question, answered.
 
-**Prose:** Where am I, and how far away is that. A phone answers in a second, which makes
-precise position feel like a fact of nature. It is not. Someone built the first one, slowly,
-and checked it.
+**Prose:** Where am I, and how far away is that? A phone answers both in about a second, which
+makes exact position feel like a fact of the world. Someone had to build the first system that
+could answer those questions at all.
 
-**Prose:** The same framework served two purposes. It made the shape of the Earth better
-known, and it made an occupied territory easier to tax, move troops through, and hold. Both are
-what it was for.
+**Prose:** The survey taught the world much about the true shape of the Earth, and it made an
+occupied territory easier to tax, march through, and hold — both were reasons it got funded.
 
 **Closing line (font-display, word-counted — this is the line that closes the loop opened by
 the Home page cold-open):** Seventy years, a small army of surveyors, and an empire's reasons

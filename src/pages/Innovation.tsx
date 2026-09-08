@@ -28,9 +28,9 @@ export default function Innovation() {
         </p>
 
         <p className="body-text mt-5">
-          James Rennell and other Company surveyors had charted whole regions by 1788, so the maps were hardly blank.
-          The trouble was connection. Each region had been surveyed on its own, and nobody could say how far apart any
-          two were. Lambton's idea was to measure one accurate skeleton first, then hang the old maps on it.
+          James Rennell and other Company surveyors had charted whole regions by 1788, so the maps weren't blank — the
+          trouble was connection. Each region had been surveyed on its own, and nobody could say how far apart any two
+          were. Lambton's idea: measure one accurate skeleton first, then hang the old maps on it.
         </p>
 
         <div className="mt-8">
@@ -39,8 +39,8 @@ export default function Innovation() {
 
         <p className="body-text mt-6 max-w-[40em]">
           <b className="text-ink-900">Doing it was another matter.</b> Mountains blocked sight lines, the monsoon
-          stopped fieldwork every year, disease killed people in the field including Lambton, and every triangle had to
-          be worked by hand.
+          stopped fieldwork every year, disease killed people in the field including Lambton, and every triangle was
+          solved by hand.
         </p>
 
         <TimelineStrip
@@ -68,11 +68,11 @@ export default function Innovation() {
           <div>
             <h3 className="sub-title">Old technique, new scale</h3>
             <p className="body-text mt-4">
-              European surveyors had solved triangles this way for two hundred years. The scale was new. A parish
-              surveyor solved his one triangle and went home. This survey chained thousands together, kept an office in
-              Calcutta that did nothing but arithmetic, and treated a disagreement between two readings as something to
-              chase down, not round away. Colin Mackenzie set out the principle in 1815: persevere "on one undeviating
-              plan."
+              European surveyors had solved triangles this way for two hundred years, so the math wasn't new — the
+              scale was. A parish surveyor solved one triangle and went home. This survey chained thousands together,
+              ran an office in Calcutta that did nothing but arithmetic, and chased down any disagreement between two
+              readings instead of rounding it away. Colin Mackenzie put the principle in writing in 1815: persevere "on
+              one undeviating plan."
             </p>
           </div>
         </div>
@@ -94,9 +94,9 @@ export default function Innovation() {
         <Standfirst>Theodolites, starlight, and steel chains.</Standfirst>
 
         <p className="lede">
-          A theodolite is a telescope mounted so it swings against finely marked circles, letting an observer read off
+          A theodolite is a telescope mounted so it swings against finely marked circles, letting an observer read
           exactly where it points. The instrument mattered less than the habit of repeating the reading. Latitude was
-          checked separately against the stars, and angles were corrected for refraction, the way air bends light. W.
+          checked against the stars, and angles were corrected for refraction, the bending of light through air. W.
           Hodson wrote down the rule: investigate discrepancies, never conceal them.
         </p>
 

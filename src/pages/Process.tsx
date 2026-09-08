@@ -65,9 +65,9 @@ const todo: Item[] = [
 ]
 
 const author = {
-  name: 'Your name here',
-  division: 'Senior · Individual Website',
-  school: 'Your school',
+  name: 'Rangan V Balaji',
+  division: 'Junior · Individual Website',
+  school: 'Laurel Springs Middle School',
   year: 'NHD 2027',
   bio: 'A one-paragraph author bio. Explain who you are, why you chose this topic, and one sentence on what surprised you during the research.',
 }

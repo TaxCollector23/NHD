@@ -1,6 +1,6 @@
 export type Term = { term: string; short: string; full: string }
 
-// Keys are lower-case; <Term> looks up by term text or by explicit `k`.
+// Keys are lower-case, looked up by term text or by explicit `k`.
 export const glossary: Record<string, Term> = {
   theodolite: {
     term: 'theodolite',
