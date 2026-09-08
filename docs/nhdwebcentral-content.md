@@ -5,7 +5,7 @@ This is the **exact current prose** from the live React site, re-extracted direc
 `Standfirst`, `ForScale`, `BaselineSteps`) on 2026-09-04. Keep this open in one tab and paste
 block by block into NHDWebCentral. Do not re-edit while pasting.
 
-**Word count of the student-composed prose = 1,168 / 1,200** (`npm run words`, re-run at the
+**Word count of the student-composed prose = 1,175 / 1,200** (`npm run words`, re-run at the
 time this doc was regenerated). This document lists every block that script counts, plus the
 uncounted interface text (nav hooks' surrounding chrome, eyebrows, `note-text` asides) needed
 to actually rebuild the page, each one labelled so you know which is which.
@@ -32,11 +32,11 @@ in History: Impact, Influence, Change
 
 **H1:** The Great Trigonometrical Survey of India
 
-**Subhead:** From 1802 to 1871, surveyors set out to fix the position of every landmark in
-India. How do you measure ground you cannot walk, and what changes once you can?
+**Subhead:** From 1802 to 1871, British and Indian surveyors fixed the exact position of places
+across India. Most of that ground they never set foot on.
 
-**Answer:** The innovation was not an instrument. The geometry itself was already two centuries
-old. What took seventy years was holding one framework together across a whole subcontinent.
+**Answer:** The math behind it was already two hundred years old — the hard part was holding one
+plan together across a whole subcontinent for seventy years.
 
 **Stat line (interface chrome, not word-counted):** 1802 first baseline measured · 1818 named
 the Great Trigonometrical Survey · Peak XV calculated, not climbed
@@ -46,15 +46,12 @@ Caption (`note-text`, not word-counted): *"Station coordinates are real places. 
 joining them is a teaching schematic, not the historical network."* Use a static image or a
 short screen capture.
 
-**Cold-open (below the hero, still on Home.tsx):** Your phone finds you in one second. Doing
-the same for a subcontinent took seventy years and a small army of surveyors.
-
 **[NAV]** The homepage carries a four-item index (Innovation, Impact, Change, Sources) with
 these one-line hooks, which **are** word-counted:
-- **Innovation** — What was actually new.
-- **Impact** — One framework, and who ran it.
-- **Change** — A mountain measured from a desk.
-- **Sources** — The document behind every claim.
+- **Innovation** — What was actually new about it.
+- **Impact** — The network, and who built it.
+- **Change** — How a mountain got measured from a desk.
+- **Sources** — Where every claim here comes from.
 
 ---
 
@@ -110,7 +107,7 @@ component — its step text **is** word-counted narrative and must be pasted ver
 - **04 Use it as the next baseline** — A calculated side starts the next triangle. Chained far
   enough, it crosses anything.
 
-**H3:** The technique was old. The scale was not.
+**H3:** Old technique, new scale
 
 **Prose:** None of this was new — European surveyors had solved triangles this way for two
 centuries, so the math wasn't new. The scale was: doing it continuously, across a subcontinent,

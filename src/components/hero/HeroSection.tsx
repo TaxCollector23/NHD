@@ -52,8 +52,8 @@ export default function HeroSection() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.35 }}
           >
-            The geometry itself was already two hundred years old. What took seventy years was holding one plan
-            together across a whole subcontinent.
+            The math behind it was already two hundred years old — the hard part was holding one plan together across
+            a whole subcontinent for seventy years.
           </motion.p>
 
           <motion.div
