@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Compass, Users, Mountain, BookMarked } from 'lucide-react'
 import HeroSection from '../components/hero/HeroSection'
 
 // Three narrative destinations plus the evidence. Each hook is the question
@@ -11,24 +11,28 @@ const path = [
     to: '/innovation',
     label: 'Innovation',
     hook: 'What was actually new about it.',
+    Icon: Compass,
   },
   {
     n: '02',
     to: '/impact',
     label: 'Impact',
     hook: 'The network, and who built it.',
+    Icon: Users,
   },
   {
     n: '03',
     to: '/change',
     label: 'Change',
     hook: 'How a mountain got measured from a desk.',
+    Icon: Mountain,
   },
   {
     n: '04',
     to: '/sources',
     label: 'Sources',
     hook: 'Where every claim here comes from.',
+    Icon: BookMarked,
   },
 ]
 
@@ -53,8 +57,11 @@ export default function Home() {
               transition={{ delay: i * 0.04 }}
               className="border-b border-earth-500/20"
             >
-              <Link to={p.to} className="group flex items-baseline gap-5 py-5 transition-colors hover:text-brass-700">
-                <span className="field-num shrink-0">{p.n}</span>
+              <Link to={p.to} className="group flex items-center gap-5 py-5 transition-colors hover:text-brass-700">
+                <span className="field-num shrink-0 self-start pt-1.5">{p.n}</span>
+                <span className="relative w-10 h-10 shrink-0 rounded-full border border-earth-500/25 bg-parchment-100 grid place-items-center text-earth-600 transition-all duration-300 group-hover:border-brass-500/50 group-hover:text-brass-600 group-hover:bg-brass-500/10 group-hover:rotate-[12deg]">
+                  <p.Icon className="w-[1.05rem] h-[1.05rem]" />
+                </span>
                 <span className="min-w-0">
                   <span className="font-display text-[1.5rem] text-ink-900 group-hover:text-brass-700 transition-colors">
                     {p.label}

@@ -12,6 +12,7 @@ import { stations, triangles } from '../../data/locations'
 export default function HeroSection() {
   return (
     <section className="relative overflow-hidden border-b border-earth-500/15">
+      <div className="hero-grid absolute inset-0" aria-hidden />
       <div className="container-museum relative grid lg:grid-cols-[1.12fr_1fr] gap-10 lg:gap-14 items-center py-14 md:py-20">
         <div>
           <motion.div
