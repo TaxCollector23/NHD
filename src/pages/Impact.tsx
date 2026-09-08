@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { User, ImageIcon } from 'lucide-react'
 import SectionNav from '../components/ui/SectionNav'
+import Reveal from '../components/ui/Reveal'
 import Standfirst from '../components/ui/Standfirst'
 import ThreadKicker from '../components/ui/ThreadKicker'
 import ForScale from '../components/ui/ForScale'
@@ -100,13 +101,15 @@ export default function Impact() {
 
       {/* ── 01 · The framework ─────────────────────────────────────────── */}
       <section id="framework" className="scroll-mt-28">
-        <h2 className="section-title">What seventy years produced</h2>
-        <Standfirst>Why it mattered to everyone after.</Standfirst>
+        <Reveal>
+          <h2 className="section-title">What seventy years produced</h2>
+          <Standfirst>Why it mattered to everyone after.</Standfirst>
 
-        <p className="lede">
-          Points across India whose positions were known accurately, and known relative to each other. A later
-          surveyor could start from one of them instead of starting over.
-        </p>
+          <p className="lede">
+            Points across India whose positions were known accurately, and known relative to each other. A later
+            surveyor could start from one of them instead of starting over.
+          </p>
+        </Reveal>
 
         <p className="body-text mt-5">
           The survey called this a geodetic framework — the measurements accounted for the Earth's curve rather than
@@ -132,13 +135,15 @@ export default function Impact() {
 
       {/* ── 02 · Who did the work ──────────────────────────────────────── */}
       <section id="people" className="scroll-mt-28 mt-16 border-t border-earth-500/20 pt-12">
-        <h2 className="section-title">Who did the work</h2>
-        <Standfirst>And who never got named.</Standfirst>
+        <Reveal>
+          <h2 className="section-title">Who did the work</h2>
+          <Standfirst>And who never got named.</Standfirst>
 
-        <p className="lede">
-          A framework like this is also a workforce. Running it for seventy years meant training people, splitting the
-          work into roles, and refilling them as people died.
-        </p>
+          <p className="lede">
+            A framework like this is also a workforce. Running it for seventy years meant training people, splitting
+            the work into roles, and refilling them as people died.
+          </p>
+        </Reveal>
 
         <div className="mt-8 flex flex-wrap items-center gap-x-2 gap-y-2">
           {['Field observation', 'Instrument reading', 'Computing office', 'Published position'].map((stage, i) => (

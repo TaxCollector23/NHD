@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
 import SectionNav from '../components/ui/SectionNav'
+import Reveal from '../components/ui/Reveal'
 import Standfirst from '../components/ui/Standfirst'
 import ThreadKicker from '../components/ui/ThreadKicker'
 import CoverageCompare from '../components/maps/CoverageCompare'
@@ -19,13 +20,15 @@ export default function Innovation() {
 
       {/* ── 01 · The problem ───────────────────────────────────────────── */}
       <section id="problem" className="scroll-mt-28">
-        <h2 className="section-title">Why measurement mattered</h2>
-        <Standfirst>Why the Company paid for it.</Standfirst>
+        <Reveal>
+          <h2 className="section-title">Why measurement mattered</h2>
+          <Standfirst>Why the Company paid for it.</Standfirst>
 
-        <p className="lede">
-          By 1800 the East India Company held a great deal of Indian territory and paid its bills by taxing the land.
-          You cannot tax land without knowing where it is.
-        </p>
+          <p className="lede">
+            By 1800 the East India Company held a great deal of Indian territory and paid its bills by taxing the
+            land. You cannot tax land without knowing where it is.
+          </p>
+        </Reveal>
 
         <p className="body-text mt-5">
           James Rennell and other Company surveyors had charted whole regions by 1788, so the maps weren't blank — the
@@ -52,13 +55,15 @@ export default function Innovation() {
 
       {/* ── 02 · How it worked ─────────────────────────────────────────── */}
       <section id="method" className="scroll-mt-28 mt-16 border-t border-earth-500/20 pt-12">
-        <h2 className="section-title">Measuring a distance you never walk</h2>
-        <Standfirst>The geometry, in four steps.</Standfirst>
+        <Reveal>
+          <h2 className="section-title">Measuring a distance you never walk</h2>
+          <Standfirst>The geometry, in four steps.</Standfirst>
 
-        <p className="lede">
-          The method is triangulation. Measure one line on the ground, stand at each end and aim at the same distant
-          hill, and those two angles fix the whole triangle.
-        </p>
+          <p className="lede">
+            The method is triangulation. Measure one line on the ground, stand at each end and aim at the same
+            distant hill, and those two angles fix the whole triangle.
+          </p>
+        </Reveal>
 
         <div className="mt-8">
           <BaselineSteps />
@@ -90,15 +95,17 @@ export default function Innovation() {
 
       {/* ── 03 · The instruments ───────────────────────────────────────── */}
       <section id="instruments" className="scroll-mt-28 mt-16 border-t border-earth-500/20 pt-12">
-        <h2 className="section-title">Where the accuracy came from</h2>
-        <Standfirst>Theodolites, starlight, and steel chains.</Standfirst>
+        <Reveal>
+          <h2 className="section-title">Where the accuracy came from</h2>
+          <Standfirst>Theodolites, starlight, and steel chains.</Standfirst>
 
-        <p className="lede">
-          A theodolite is a telescope mounted so it swings against finely marked circles, letting an observer read
-          exactly where it points. The instrument mattered less than the habit of repeating the reading. Latitude was
-          checked against the stars, and angles were corrected for refraction, the bending of light through air. W.
-          Hodson wrote down the rule: investigate discrepancies, never conceal them.
-        </p>
+          <p className="lede">
+            A theodolite is a telescope mounted so it swings against finely marked circles, letting an observer read
+            exactly where it points. The instrument mattered less than the habit of repeating the reading. Latitude
+            was checked against the stars, and angles were corrected for refraction, the bending of light through
+            air. W. Hodson wrote down the rule: investigate discrepancies, never conceal them.
+          </p>
+        </Reveal>
 
         <ul className="body-text mt-6 max-w-[40em] space-y-2 list-disc pl-5">
           <li>
