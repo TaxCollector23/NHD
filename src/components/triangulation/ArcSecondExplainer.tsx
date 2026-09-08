@@ -14,7 +14,7 @@ export default function ArcSecondExplainer() {
           <Ruler className="w-5 h-5" />
         </div>
         <div className="min-w-0">
-          <h3 className="sub-title">Why a fraction of a degree decides everything</h3>
+          <h3 className="sub-title">Why a fraction of a degree matters this much</h3>
           <p className="body-text mt-2">
             An angle read at a station is not the answer. It is multiplied by a distance to get the answer, so a small
             error in the angle becomes a large error on the ground. That multiplication is why a survey working over

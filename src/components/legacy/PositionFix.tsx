@@ -303,8 +303,8 @@ export default function PositionFix({ onReadout }: { onReadout?: (r: Readout[]) 
       </div>
 
       <p className="text-xs text-earth-600 mt-4 leading-relaxed">
-        Same idea, different references: hilltops and a compass then, satellites and a timed signal now. The technology
-        changed completely; the geometry of fixing yourself by intersection did not.
+        Same idea, different references: hilltops and a compass back then, satellites and a timed signal now. The
+        tech is nothing alike, but the geometry — fixing yourself by intersection — is the same trick either way.
       </p>
     </div>
   )

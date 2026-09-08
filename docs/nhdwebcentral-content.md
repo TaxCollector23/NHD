@@ -84,13 +84,9 @@ the triangle mesh is a teaching schematic rather than the survey's actual networ
 historical coverage data is shown, because no verified coverage dataset has been assembled for
 this project."*
 
-**Sub-heading (interface chrome):** What stood in the way
-
-**Four cards (plain text, word-counted):**
-- **Terrain** — Blocked sight lines.
-- **Season** — Monsoon halted work.
-- **Disease** — Lambton died in the field.
-- **Tools** — Computed by hand.
+**Prose:** Doing it was another matter. Mountains blocked sight lines, the monsoon stopped
+fieldwork every year, disease killed people in the field including Lambton, and every triangle
+was solved by hand.
 
 **[INTERACTIVE]** Verified date strip, 1788 to 1830. Caption: *"The survey did not start from
 nothing. Rennell's mapping was already published in 1788, and the work Lambton began in 1802
@@ -284,9 +280,9 @@ after the previous version of this document was written):**
 
 **Standfirst:** The opening question, answered.
 
-**Prose:** Where am I, and how far away is that? A phone answers both in about a second, which
-makes exact position feel like a fact of the world. Someone had to build the first system that
-could answer those questions at all.
+**Prose:** Where am I, and how far away is that? A phone answers both in about a second, so
+it's easy to forget that exact position used to be something nobody could just know. Someone
+had to build the first system that could actually answer it.
 
 **Prose:** The survey taught the world much about the true shape of the Earth, and it made an
 occupied territory easier to tax, march through, and hold — both were reasons it got funded.

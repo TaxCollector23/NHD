@@ -362,10 +362,10 @@ export default function EverestCalculator({ onReadout }: { onReadout?: (r: Reado
           <div className="page-eyebrow">Why the correction matters</div>
         </div>
         <p className="text-sm text-ink-800/90 leading-relaxed">
-          Over long distances the Earth curves away, hiding the peak's base below the observer's straight-line horizon;
-          atmospheric refraction bends light the other way and cancels part of it. Both fold into one coefficient{' '}
-          <em>k</em> ≈ 0.13 (Bomford, <i>Geodesy</i>), and getting it wrong throws the height by hundreds of metres.
-          Move the <em>k</em> slider to see it.
+          Over long distances the Earth curves away, so part of the peak's base drops below your straight-line sight
+          line. At the same time, the air bends light back the other way, which cancels some of that out. Both get
+          folded into one coefficient <em>k</em> ≈ 0.13 (Bomford, <i>Geodesy</i>), and getting it wrong throws the
+          height off by hundreds of metres. Move the <em>k</em> slider to see it happen.
         </p>
       </div>
     </div>

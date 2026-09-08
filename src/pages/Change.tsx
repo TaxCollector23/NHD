@@ -109,8 +109,9 @@ export default function Change() {
         <Standfirst>What it looks like now.</Standfirst>
 
         <p className="lede">
-          Where am I, and how far away is that? A phone answers both in about a second, which makes exact position feel
-          like a fact of the world. Someone had to build the first system that could answer those questions at all.
+          Where am I, and how far away is that? A phone answers both in about a second, so it's easy to forget that
+          exact position used to be something nobody could just know. Someone had to build the first system that could
+          actually answer it.
         </p>
 
         <p className="body-text mt-5">

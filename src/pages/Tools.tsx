@@ -40,9 +40,9 @@ export default function Tools() {
           id="triangulation"
           n={1}
           title="Triangulation simulator"
-          question="How far away is that hill, and how much should you trust the answer?"
+          question="How far away is that hill, and how sure can you actually be about it?"
           kind="illustrative"
-          claim="The Law of Sines, and how angle error grows along a chain of triangles."
+          claim="The Law of Sines, and how a small angle error snowballs across a chain of triangles."
           note="The geometry and the error propagation are standard and correct. The baselines and angles are teaching values, not the survey's recorded observations."
           sources={[
             {
@@ -81,21 +81,21 @@ export default function Tools() {
           id="arcsecond"
           n={2}
           title="What an arc-second buys you"
-          question="Why does an angle this small matter?"
+          question="Why does an angle this tiny even matter?"
           kind="illustrative"
-          claim="How a small angular error becomes a large distance error."
+          claim="How a tiny angle error turns into a big distance error."
           note="Plain trigonometry, checkable on a calculator. No figure for the survey's own instrument precision appears here, because none could be traced to a document."
           sources={[{ text: 'Elementary trigonometry', type: 'Secondary' }]}
           explain={
             <>
               <p>
-                An arc-second is one part in 3,600 of a degree, well below anything an eye can judge on its own. It
-                matters because the angle is never the final answer. It gets multiplied by a distance.
+                An arc-second is one part in 3,600 of a degree — way smaller than anything your eye could judge on its
+                own. It matters because the angle is never the final answer. It gets multiplied by a distance.
               </p>
               <p>
-                Over a short sight line, a tiny angular error is a few centimetres. Over the long sight lines this
-                survey worked with, the same error is close to a metre. Carry that through a chain of triangles and it
-                is the difference between a position you can build on and one you cannot.
+                Over a short sight line, a tiny angle error is only a few centimetres. Over the long sight lines this
+                survey used, that same error is close to a metre. Carry that through a whole chain of triangles and
+                it's the difference between a position you can trust and one you can't.
               </p>
             </>
           }
@@ -107,7 +107,7 @@ export default function Tools() {
           id="theodolite"
           n={3}
           title="The theodolite"
-          question="How do you read an angle accurately enough to build on it?"
+          question="How do you read an angle precisely enough to actually trust it?"
           kind="illustrative"
           claim="A generic schematic of the instrument used to read horizontal angles."
           note="The object is historical and the parts are real. Specific dimensions, weights, and resolutions are deliberately absent, because no verified specification was found for the survey's instruments."
@@ -147,9 +147,9 @@ export default function Tools() {
           id="height"
           n={4}
           title="Height of a peak you cannot reach"
-          question="How do you get a mountain's height without climbing it?"
+          question="How do you figure out a mountain's height without ever climbing it?"
           kind="illustrative"
-          claim="How a peak's height is derived from a distant angle, with corrections."
+          claim="How you turn a distant angle into a peak's height, once you add the corrections."
           note="The geometry and the curvature-and-refraction correction are standard and correct. The inputs are teaching values, not the survey's Peak XV stations, and this does not reproduce Sikdar's computation. The modern figure is shown for scale only."
           sources={[
             {
@@ -166,14 +166,16 @@ export default function Tools() {
           explain={
             <>
               <p>
-                Point at a summit from a known station, measure how far above horizontal you are looking, and multiply
-                by the distance. That gets you a first answer, and over a hundred miles it is wrong in two ways at once.
+                Point at a summit from a station whose position you know, measure how far above horizontal you're
+                looking, and multiply by the distance. That gives you a first answer, and over a hundred miles it's
+                wrong in two different ways.
               </p>
               <p>
-                The Earth curves away underneath the sight line, so the peak stands taller than the raw geometry says.
-                Light bends downward through the atmosphere, and that lifts the summit higher again in the eyepiece.
-                Move the refraction slider and watch the final number move. A figure this sensitive is why the survey
-                put the work in an office and repeated it, rather than trusting one observer looking once.
+                The Earth curves away under the sight line, so the peak is actually taller than flat geometry would
+                say. Light also bends slightly as it passes through the air, which makes the summit look even higher
+                through the eyepiece. Move the refraction slider and watch the number shift. The result is sensitive
+                enough that the survey never trusted one observer looking once — they sent it to an office and did it
+                again.
               </p>
             </>
           }
@@ -188,10 +190,10 @@ export default function Tools() {
           id="position"
           n={5}
           title="Where am I?"
-          question="How do you fix your own position, then and now?"
+          question="How do you figure out where you are — in the 1800s versus now?"
           kind="illustrative"
-          claim="A geometry comparison of two ways to fix a position: resection from bearings, and trilateration from distances."
-          note="Both panels show the same move: intersect measurements taken from references whose positions are already known. The shapes are real geometry. There are no timing or accuracy numbers, because a like-for-like comparison of the two eras is not supported by the evidence, and this is not a claim that satellite positioning descends from the survey."
+          claim="Two ways to work out your position, bearings vs. distances, side by side."
+          note="Both panels do the same basic move: intersect measurements taken from points whose position you already know. The shapes are real geometry. There's no timing or accuracy comparison here, because the evidence for one doesn't exist, and this isn't a claim that satellite positioning comes from the survey."
           sources={[
             {
               text: 'Resection and trilateration are standard positioning methods',
@@ -207,9 +209,9 @@ export default function Tools() {
                 positions are known. Where the three circles overlap is the position.
               </p>
               <p>
-                Push either error slider and the crossing stops being a point and turns into a small patch. That patch
-                is the honest answer, because a measured position always has a size. The two technologies are unrelated.
-                The geometry is the only thing they have in common.
+                Push either error slider and the crossing stops being a point and turns into a small patch. That's the
+                honest answer — a measured position always covers some area, not a single dot. The two technologies
+                aren't related at all. Geometry is the only thing they share.
               </p>
             </>
           }
