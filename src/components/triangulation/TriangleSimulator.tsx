@@ -30,34 +30,34 @@ type Preset = {
 
 const PRESETS: Preset[] = [
   {
-    id: 'madras',
-    title: 'The Madras baseline',
+    id: ‘madras’,
+    title: ‘The Madras baseline’,
     year: 1802,
     c: 12.1,
     A: 78,
     B: 72,
     blurb:
-      'Lambton measured his first baseline near St. Thomas Mount. Every later distance traces back to a line like this one. The length here is a teaching value, not the survey’s own recorded figure.',
+      ‘Lambton measured his first baseline near St. Thomas Mount, south of Madras. Every distance in the Great Arc traces back to a measured line like this one. The length here is a teaching value, not the survey\’s own recorded figure.’,
   },
   {
-    id: 'arc',
-    title: 'One triangle in the Great Arc',
+    id: ‘arc’,
+    title: ‘One triangle in the Great Arc’,
     year: 1830,
     c: 25,
     A: 74,
     B: 68,
     blurb:
-      'A typical triangle in the meridian arc. Two stations on ridges sighted a third point from a baseline measured down in the plains.',
+      ‘Most of the arc was chained like this — two ridge stations, one measured baseline in the plains. The surveyors on the ridges never walked to the point they were computing. They just had to aim at it.’,
   },
   {
-    id: 'peakxv',
-    title: 'Darjeeling toward Peak XV',
+    id: ‘peakxv’,
+    title: ‘Darjeeling toward Peak XV’,
     year: 1852,
     c: 40,
     A: 85,
     B: 88,
     blurb:
-      'Long, thin triangles from stations in Bengal let Radhanath Sikdar’s office fix Peak XV by computation, without anyone going near the mountain.',
+      ‘Long, thin triangles from stations in Bengal. Radhanath Sikdar\’s office in Calcutta turned those angles into a height. Nobody went near the mountain — the answer came out of a desk.’,
   },
 ]
 
@@ -651,8 +651,8 @@ function ErrorExplanation({
         <div className="page-eyebrow">How far can you trust the far point?</div>
       </div>
       <p className="text-ink-800/85 text-xs leading-relaxed">
-        A perfect triangle on paper is not a perfect position on the ground. Every angle you read has a small error, and
-        it grows the further away the point you're aiming at.
+        A perfect triangle on paper doesn't give you a perfect position on the ground. Every angle carries a small
+        reading error, and the further away the point you're fixing, the more that error matters.
       </p>
       <Control
         label="How precisely you can read an angle (arc-seconds)"

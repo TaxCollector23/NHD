@@ -30,36 +30,39 @@ type Station = {
 const STATIONS: Station[] = [
   {
     id: 'long',
-    name: 'Long low-angle sight-line',
+    name: 'Bengal plains · long sight',
     distance: 174,
     angle: 2.18,
     observer: 0.137,
     blurb:
-      'A distant lowland station: an apparent angle of just over 2° across ~170 km still resolves a ~9 km peak. Illustrative values, not a historical record.',
+      'A lowland station in Bengal, looking north across 170 km. An angle barely above 2° still puts you within a few hundred metres — once you correct for the Earth\'s curve. Teaching values, not the survey\'s own.',
   },
   {
     id: 'long2',
-    name: 'Neighbouring low station',
+    name: 'Second plains station',
     distance: 176,
     angle: 2.13,
     observer: 0.137,
-    blurb: 'Averaging several such readings from different stations cancels random error. Illustrative values.',
+    blurb:
+      'The survey never trusted one reading. A second station at a similar distance gives a slightly different angle, and averaging the two results cancels out small, random errors. Teaching values.',
   },
   {
     id: 'ridge',
-    name: 'High ridge station',
+    name: 'Ridge station · shorter range',
     distance: 130,
     angle: 3.1,
     observer: 2.13,
-    blurb: 'A higher observer shortens the curvature correction. Illustrative values.',
+    blurb:
+      'Climbing before observing does two things: the distance is shorter, and the curvature correction shrinks. This is why the survey favoured elevated stations for the hardest sights. Teaching values.',
   },
   {
     id: 'demo',
-    name: 'Nearby hill',
+    name: 'Short baseline',
     distance: 40,
     angle: 5.0,
     observer: 0.6,
-    blurb: 'Short baseline, large angle: the corrections are small. Illustrative values.',
+    blurb:
+      'A short distance means a steeper angle and a much smaller curvature correction. The simple case — useful for seeing which terms matter and which nearly vanish. Teaching values.',
   },
 ]
 
