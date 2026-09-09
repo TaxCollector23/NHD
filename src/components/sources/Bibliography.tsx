@@ -1,5 +1,5 @@
 import { ExternalLink } from 'lucide-react'
-import { sources, sourceTypes, tierRank, type Source, type SourceTier } from '../../data/sources'
+import { sources, sourceTypes, tierRank, type Source, type SourceTier, type SourceType } from '../../data/sources'
 
 /*
   Annotated bibliography. Groups by type, sorts Core → Supporting → Consulted
@@ -23,14 +23,14 @@ export default function Bibliography() {
 
       {grouped.map((group) => (
         <section key={group.type} aria-label={group.type}>
-          <header className="flex items-baseline justify-between gap-4 border-b border-earth-500/25 pb-2 mb-6">
-            <h2 className="font-display text-[1.6rem] text-ink-900">{group.type}</h2>
-            <span className="note-text tabular-nums">
+          <header className="flex items-center gap-3 border-b-2 border-ink-900/12 pb-3 mb-6">
+            <TypePill type={group.type} />
+            <span className="note-text tabular-nums ml-auto">
               {group.items.length} {group.items.length === 1 ? 'source' : 'sources'}
             </span>
           </header>
 
-          <ol className="space-y-6">
+          <ol className="space-y-8">
             {group.items.map((s) => (
               <SourceEntry key={s.id} source={s} />
             ))}
@@ -42,12 +42,19 @@ export default function Bibliography() {
 }
 
 function SourceEntry({ source }: { source: Source }) {
+  const isPrimary = source.type === 'Primary'
+  const borderColor = isPrimary ? 'border-l-brass-500' : 'border-l-earth-400'
+
   return (
-    <li id={source.id} className="grid md:grid-cols-[7.5rem_1fr] gap-x-6 gap-y-2 scroll-mt-28">
-      <div className="pt-0.5">
+    <li id={source.id} className="scroll-mt-28">
+      {/* badges row */}
+      <div className="flex items-center gap-2 mb-2">
+        <TypeBadge type={source.type} />
         <TierBadge tier={source.tier} />
       </div>
-      <div>
+
+      {/* citation block with colored left rule */}
+      <div className={`border-l-[3px] ${borderColor} pl-4`}>
         <p className="text-[0.98rem] leading-relaxed text-ink-900 pl-7 -indent-7">
           {source.citation}
           {source.link && (
@@ -65,7 +72,8 @@ function SourceEntry({ source }: { source: Source }) {
             </>
           )}
         </p>
-        <p className="mt-1.5 text-[0.9rem] text-ink-800/85 leading-relaxed border-l-2 border-brass-500/40 pl-3 max-w-[52em]">
+
+        <p className="mt-2 text-[0.9rem] text-ink-800/85 leading-relaxed max-w-[52em]">
           <span className="font-semibold text-earth-700 uppercase tracking-[0.14em] text-[0.7rem] mr-1.5">
             What this gave the project ·
           </span>
@@ -75,6 +83,83 @@ function SourceEntry({ source }: { source: Source }) {
     </li>
   )
 }
+
+/* ── TypePill: section heading badge ───────────────────────────────────────── */
+
+const TYPE_STYLE: Record<
+  SourceType,
+  { label: string; className: string }
+> = {
+  'Primary': {
+    label: 'Primary Sources',
+    className: 'bg-brass-900 text-brass-50',
+  },
+  'Secondary — Institutional': {
+    label: 'Secondary Sources — Institutional',
+    className: 'bg-ink-900 text-parchment-100',
+  },
+  'Secondary — Scholarly': {
+    label: 'Secondary Sources — Scholarly',
+    className: 'bg-ink-800 text-parchment-100',
+  },
+  'Reference': {
+    label: 'Reference Works',
+    className: 'bg-earth-800 text-parchment-50',
+  },
+  'Image': {
+    label: 'Images',
+    className: 'bg-earth-600 text-parchment-50',
+  },
+}
+
+function TypePill({ type }: { type: SourceType }) {
+  const s = TYPE_STYLE[type]
+  return (
+    <span
+      className={`inline-block rounded px-3 py-1 text-[0.78rem] font-bold uppercase tracking-[0.15em] ${s.className}`}
+    >
+      {s.label}
+    </span>
+  )
+}
+
+/* ── TypeBadge: inline per-entry badge ─────────────────────────────────────── */
+
+const TYPE_BADGE: Record<SourceType, { short: string; className: string }> = {
+  'Primary': {
+    short: 'Primary',
+    className: 'border-brass-600/60 bg-brass-500/15 text-brass-800',
+  },
+  'Secondary — Institutional': {
+    short: 'Secondary',
+    className: 'border-ink-900/20 bg-ink-900/6 text-ink-800',
+  },
+  'Secondary — Scholarly': {
+    short: 'Secondary',
+    className: 'border-ink-900/20 bg-ink-900/6 text-ink-800',
+  },
+  'Reference': {
+    short: 'Reference',
+    className: 'border-earth-500/40 bg-parchment-200/60 text-earth-700',
+  },
+  'Image': {
+    short: 'Image',
+    className: 'border-earth-500/30 bg-parchment-100/70 text-earth-600',
+  },
+}
+
+function TypeBadge({ type }: { type: SourceType }) {
+  const s = TYPE_BADGE[type]
+  return (
+    <span
+      className={`inline-flex items-center rounded-full border px-2.5 py-0.5 text-[0.7rem] font-semibold uppercase tracking-[0.14em] ${s.className}`}
+    >
+      {s.short}
+    </span>
+  )
+}
+
+/* ── TierBadge ──────────────────────────────────────────────────────────────── */
 
 function TierBadge({ tier }: { tier: SourceTier }) {
   const style: Record<SourceTier, { label: string; className: string; dot: string }> = {
@@ -105,20 +190,48 @@ function TierBadge({ tier }: { tier: SourceTier }) {
   )
 }
 
+/* ── TierLegend ─────────────────────────────────────────────────────────────── */
+
 function TierLegend() {
   return (
-    <div className="card-parchment p-5">
-      <div className="page-eyebrow mb-3">How to read this bibliography</div>
-      <div className="grid sm:grid-cols-3 gap-4 text-[0.92rem] leading-relaxed">
-        <LegendRow tier="Core">
-          Load-bearing to the site's argument. Removing one would leave a claim without its footing.
-        </LegendRow>
-        <LegendRow tier="Supporting">
-          Backs a specific fact in the prose — a date, a name, a numeric value.
-        </LegendRow>
-        <LegendRow tier="Consulted">
-          Read for context or cross-check. Not cited by name in the site's prose.
-        </LegendRow>
+    <div className="card-parchment p-5 space-y-4">
+      <div>
+        <div className="page-eyebrow mb-1">Source types</div>
+        <div className="flex flex-wrap gap-2">
+          {(['Primary', 'Secondary — Scholarly', 'Secondary — Institutional', 'Reference', 'Image'] as SourceType[]).map(
+            (t) => (
+              <span key={t} className="flex items-center gap-1.5">
+                <TypeBadge type={t} />
+                <span className="text-[0.82rem] text-earth-700">
+                  {t === 'Primary'
+                    ? '— documents from the period itself'
+                    : t === 'Secondary — Scholarly'
+                      ? '— academic analysis written later'
+                      : t === 'Secondary — Institutional'
+                        ? '— official and institutional histories'
+                        : t === 'Reference'
+                          ? '— technical reference works'
+                          : '— images and portraits'}
+                </span>
+              </span>
+            ),
+          )}
+        </div>
+      </div>
+
+      <div className="border-t border-earth-500/20 pt-4">
+        <div className="page-eyebrow mb-2">How important each source was</div>
+        <div className="grid sm:grid-cols-3 gap-3 text-[0.92rem] leading-relaxed">
+          <LegendRow tier="Core">
+            Load-bearing to the site's argument. Removing one would leave a claim without its footing.
+          </LegendRow>
+          <LegendRow tier="Supporting">
+            Backs a specific fact in the prose — a date, a name, a numeric value.
+          </LegendRow>
+          <LegendRow tier="Consulted">
+            Read for context or cross-check. Not cited by name in the site's prose.
+          </LegendRow>
+        </div>
       </div>
     </div>
   )

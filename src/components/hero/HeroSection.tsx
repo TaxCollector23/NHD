@@ -42,8 +42,8 @@ export default function HeroSection() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.25 }}
           >
-            From 1802 to 1871, British officers and Indian workers measured India by chaining triangles across it —
-            computing the position of most of the subcontinent without visiting it.
+            From 1802 to 1871, British officers and Indian workers measured India by chaining triangles across it,
+            and most of that ground was not travelled by the surveyors.
           </motion.p>
 
           <motion.p
