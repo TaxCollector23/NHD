@@ -592,7 +592,7 @@ function GuidedExplanation({ g, c, A, B }: { g: ReturnType<typeof solve>; c: num
     {
       n: 4,
       title: 'The Law of Sines turns those angles into distances.',
-      body: `A to C is ${g.b.toFixed(2)} km, B to C is ${g.a.toFixed(2)} km, and the target sits ${g.height.toFixed(2)} km beyond the baseline. In 1802 that was worked out by hand off logarithm tables.`,
+      body: `A to C is ${g.b.toFixed(2)} km, B to C is ${g.a.toFixed(2)} km, and the target sits ${g.height.toFixed(2)} km beyond the baseline. In 1802 that answer came out of a logarithm table, worked by hand.`,
     },
     {
       n: 5,
