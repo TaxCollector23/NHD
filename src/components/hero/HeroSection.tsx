@@ -42,8 +42,8 @@ export default function HeroSection() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.25 }}
           >
-            From 1802 to 1871, British and Indian surveyors fixed the exact position of places across India. Most of
-            that ground they never set foot on.
+            From 1802 to 1871, British officers and Indian workers measured India by chaining triangles across it —
+            computing the position of most of the subcontinent without visiting it.
           </motion.p>
 
           <motion.p
@@ -52,8 +52,9 @@ export default function HeroSection() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.35 }}
           >
-            The math behind it was already two hundred years old — the hard part was holding one plan together across
-            a whole subcontinent for seventy years.
+            Triangulation: measure one line on the ground, aim at a hilltop from each end, and that hilltop's position
+            drops out of arithmetic. The survey ran that for seventy years — one standard plan, every angle taken more
+            than once, every discrepancy investigated.
           </motion.p>
 
           <motion.div
