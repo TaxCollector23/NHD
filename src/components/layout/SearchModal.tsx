@@ -106,7 +106,7 @@ export default function SearchModal({ open, onClose }: { open: boolean; onClose:
     const sourceRows: Result[] = sources.map((s) => ({
       type: 'source' as const,
       label: s.citation.split('.')[0],
-      hint: s.note,
+      hint: s.contribution,
       to: '/sources',
       Icon: Library,
     }))
